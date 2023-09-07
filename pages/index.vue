@@ -4,7 +4,7 @@
     <div> 
 
       <div class="banner">
-        <h2>POSTCITY BANNER HERE</h2>
+        <img src="..\assets\img\plants-banner.png" alt="PostCity Banner" />	
       </div>
 
        <div class="intro">
