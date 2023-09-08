@@ -4,7 +4,7 @@
     <div> 
 
       <div class="banner">
-        <img src="..\assets\img\plants-banner.png" alt="PostCity Banner" />	
+        <img src="~/assets/img/plants-banner.png" alt="PostCity Banner" />	
       </div>
 
        <div class="intro">
@@ -72,10 +72,10 @@
           v-for="step in steps"
           :key="step.id"
           :data-step-id="step.id"
-          class="my-64 h-48 border border-black flex justify-center items-center"
+          class="my-64 border border-black flex justify-center items-center"
           :class="{ 'bg-yellow-300': activeStepId === step.id }"
         >
-          Topic Group {{ step.id }}
+          <img :src="step.image" :alt="step.id" class="topic-group-steps" />
         </div>
     </Scrollama>
 
@@ -90,7 +90,7 @@
 export default {
   data () {
     return {
-      steps: [{ id: '1' }, { id: '2' }, { id: '3' }, { id: '4' }, { id: '5' }, { id: '6' }],
+      steps: [{ id: '1', image: require('../assets/img/topicgroup-ai.png') }, { id: '2', image: '' }, { id: '3', image: '' }, { id: '4', image: '' }, { id: '5', image: '' }, { id: '6', image: '' }],
       stepsSticky: [{ id: 'A' }, { id: 'B' }, { id: 'C' }, { id: 'D' }],
       stepsSticky2: [{ id: 'I' }, { id: 'II' }, { id: 'III' }, { id: 'IV' }],
       activeStepId: null,
@@ -134,5 +134,10 @@ export default {
 
 .summary {
   margin-bottom: 100px;
+}
+
+.topic-group-steps {
+  width: 100%;
+  height: 100%;
 }
 </style>
