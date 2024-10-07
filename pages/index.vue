@@ -19,7 +19,7 @@
       </div>
       
       <div class="text-box mb-4">
-        <h3>What is the Institute of Digital Sciences (IDSA)?</h3>
+        <h3>What is the Institute of Digital Sciences (IT-U)?</h3>
         <p>Lorem lorem lorem ipsum</p>
       </div>
 
