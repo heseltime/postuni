@@ -1,4 +1,4 @@
-# Post City Mock Up on Vue with Scrollama
+# Post City NOW?
 
 This is a mock-up for scrollytelling the Founding Lab Story at Ars Electronica Festival 2023.
 
