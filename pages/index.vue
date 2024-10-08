@@ -39,7 +39,7 @@
         <div class="con-belt"></div>
       </div>
 
-      <h4 class="text-2xl uppercase mb-4 font-mono text-blue-300">Without further ado:</h4>
+      <h4 class="text-2xl uppercase mb-4 font-mono text-blue-300">Let's unpack this:</h4>
 
       <h3 class="text-3xl uppercase mb-4 font-mono text-blue-300">Why IT-U at PostCity <b>->NOW<-</b>? <b>IN DETAIL</b></h3>
 

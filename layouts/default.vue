@@ -33,11 +33,21 @@
       </h5>
       <h3 class="text-md text-gray-300">Don't put short-term, boring business-as-usual before a truly transformative project opportunity, with, yes, business value as well, dear <b>Österreichische Post</b>* -</h3>
       <h4 class="text-md text-gray-300">* <b>Current Owner of PostCity</b></h4>
-      <h3 class="text-md text-gray-300">If Linz wants to continue to be a creative hub, it's <b>time to put the money where the mouth is</b>.</h3>
+      <h3 class="text-md text-gray-300">If Linz wants to continue to be a creative hub, it's <b>time to put the money where the mouth is</b>. Here's our** idea:</h3>
       <h4 class="text-md text-gray-300">This requires making yourself heard by city and government officials as well as private businesspeople owning the property in question.</h4>
 
       <!-- Call to Action Button -->
       <button class="cta-button">Get Involved Now</button>
+
+      <h3 class="text-4xl uppercase mb-4 font-mono text-white-400 pt-12">**Who are we?</h3>
+
+      <h4>We are an unlikely grouping iterested in a sutainable, smart, relevant and promising development of the university sector in Linz that still goes together with economic prowess. <b>But above all, we are Linzer.</b> And students.</h4>
+
+      <!-- IT-U Founding Lab? -->
+      <!-- Kunstuni -->
+      <!-- KHJ -->
+
+      <h4><b>Email us if you have an idea and/or want to help drive this action for Linz!</b></h4>
     </div>
 
 
