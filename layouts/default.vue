@@ -6,7 +6,11 @@
 
       <h2 class="text-5xl uppercase mb-4 font-mono pt-30">PostCity x IT-U (postuni)</h2>
 
-      <h3 class="text-4xl uppercase mb-4 font-mono text-red-400 pt-12">While the initial drive came top-down from politics, Linz is shaping the project to make it actually work for the city.</h3>
+      <h3 class="text-4xl uppercase mb-4 font-mono text-red-400 pt-12">
+        While the initial drive came top-down from politics,
+        <b class="highlight-background">the people are shaping the project to make it actually work for the city</b>.
+      </h3>
+
 
       <div class="bg-gray-500 text-gray-100 text-center">
         <div class="w-full background-banner flashy-banner-text">
@@ -22,15 +26,19 @@
 
     <div class="max-w-3xl w-full mx-auto px-8 pt-10">
       <div class="highlight-text-intro pb-64 text-center">
-        <h3 class="text-4xl uppercase mb-4 font-mono text-white-400 pt-12">What is this about and why now?</h3>
-        <h5 class="text-md text-white-400">
-          Now that the city <a href="https://www.nachrichten.at/politik/landespolitik/stadt-linz-zieht-bei-der-umwidmung-fuer-die-itu-die-notbremse;art383,3989606?utm_source=browser&utm_medium=push-notification&utm_campaign=cleverpush-1728293690" target="_blank">has backtracked</a> on the planned Dornach "Grüngürtel" extension, here is another chance for the PostCity location.
-        </h5>
-        <h3 class="text-md text-gray-300">Don't put short-term, boring business-as-usual before a truly transformative project opportunity, with, yes, business value as well, dear <b>Österreichische Post</b>* -</h3>
-        <h4 class="text-md text-gray-300">* <b>Current Owner of PostCity</b></h4>
-        <h3 class="text-md text-gray-300">If Linz wants to continue to be a creative hub, it's <b>time to put the money where the mouth is</b>.</h3>
-        <h4 class="text-md text-gray-300">This requires making yourself heard by city and government officials as well as private businesspeople owning the property in question.</h4>
-      </div>
+      <h3 class="text-4xl uppercase mb-4 font-mono text-white-400 pt-12">What is this about and why now?</h3>
+      <h5 class="text-md text-white-400">
+        Now that the city <a href="https://www.nachrichten.at/politik/landespolitik/stadt-linz-zieht-bei-der-umwidmung-fuer-die-itu-die-notbremse;art383,3989606?utm_source=browser&utm_medium=push-notification&utm_campaign=cleverpush-1728293690" target="_blank">has backtracked</a> on the planned Dornach "Grüngürtel" extension, here is another chance for the PostCity location.
+      </h5>
+      <h3 class="text-md text-gray-300">Don't put short-term, boring business-as-usual before a truly transformative project opportunity, with, yes, business value as well, dear <b>Österreichische Post</b>* -</h3>
+      <h4 class="text-md text-gray-300">* <b>Current Owner of PostCity</b></h4>
+      <h3 class="text-md text-gray-300">If Linz wants to continue to be a creative hub, it's <b>time to put the money where the mouth is</b>.</h3>
+      <h4 class="text-md text-gray-300">This requires making yourself heard by city and government officials as well as private businesspeople owning the property in question.</h4>
+
+      <!-- Call to Action Button -->
+      <button class="cta-button">Get Involved Now</button>
+    </div>
+
 
     <Nuxt />
 
@@ -47,7 +55,7 @@
         <span class="secondary-link" v-else>+ {{ page }}</span>
       </NuxtLink>-->
 
-      <h3 class="text-4xl uppercase mb-4 font-mono text-white-400 pt-12">Who We Are</h3>
+      <h3 class="text-4xl uppercase mb-4 font-mono text-white-400 pt-12">Imprint</h3>
 
       
 
@@ -166,6 +174,57 @@ export default {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+
+.highlight-background {
+  background-color: rgba(255, 255, 0, 0.5); /* Yellow semi-transparent background */
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+}
+
+.cta-button {
+  background: linear-gradient(45deg, #ff4d4d, #ff0000); /* Gradient for a glossy look */
+  color: #ffffff;
+  padding: 1em 0; /* Vertical padding only */
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3), inset 0px 2px 4px rgba(255, 255, 255, 0.3); /* 3D effect */
+  width: 100%; /* Full width of container */
+  max-width: 800px; /* Limits width on larger screens */
+  margin: 1.5em auto 0; /* Center-align and space from other elements */
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background: linear-gradient(45deg, #ff3333, #cc0000); /* Darker gradient on hover */
+  transform: translateY(-3px); /* Lift effect on hover */
+}
+
+.cta-button:active {
+  transform: translateY(1px); /* Slightly press down on click */
+}
+
+.cta-button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cta-button:hover:before {
+  opacity: 1; /* Adds an extra layer for a glossier effect on hover */
+}
+
 
 
 </style>

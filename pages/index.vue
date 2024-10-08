@@ -41,7 +41,7 @@
 
       <h4 class="text-2xl uppercase mb-4 font-mono text-blue-300">Without further ado:</h4>
 
-      <h3 class="text-3xl uppercase mb-4 font-mono text-blue-300">Why IT-U at PostCity <b>->NOW<-</b>? ...</h3>
+      <h3 class="text-3xl uppercase mb-4 font-mono text-blue-300">Why IT-U at PostCity <b>->NOW<-</b>? <b>IN DETAIL</b></h3>
 
       <div
         class="graphic sticky top-0 border mt-20 flex items-center justify-center text-8xl"
@@ -89,6 +89,15 @@
     <div class="full">
       <img src="~/assets/img/RoboticsTopic_sonia_litwin_ccby.png" alt="Orange Wall" class="" />	
       <div class="con-belt"></div>
+    </div>
+
+    <div class="header-box">
+      <div class="info header">
+        <h3>THE STORY SO FAR</h3>
+        <div class="arrow-down"></div>
+        <div class="arrow-down"></div>
+        <div class="arrow-down"></div>
+      </div>
     </div>
 
     <div class="flex mb-8"> 
@@ -146,17 +155,26 @@
     </Scrollama>
 
     <div class="header-box">
+      <div class="info header">
+        <h3>THE ART UNIVERSITY</h3>
+        <div class="arrow-down"></div>
+        <div class="arrow-down"></div>
+        <div class="arrow-down"></div>
+      </div>
+    </div>
+
+    <div class="text-box mb-4">
+      <h3>Lorem ipsum</h3>
+      <p>Lorem lorem lorem ipsum</p>
+    </div>  
+
+    <div class="header-box">
       <div class="summary header">
         <h3>THE NEXT STEPS</h3>
         <div class="arrow-down"></div>
         <div class="arrow-down"></div>
         <div class="arrow-down"></div>
       </div>
-    </div>
-    
-    <div class="text-box mb-4">
-      <h3>Lorem ipsum</h3>
-      <p>Lorem lorem lorem ipsum</p>
     </div>
 
     <div class="text-box mb-4 endnotes">
