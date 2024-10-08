@@ -169,6 +169,20 @@
     </div>  
 
     <div class="header-box">
+      <div class="info header">
+        <h3>CATHOLIC UNIV. YOUTH</h3>
+        <div class="arrow-down"></div>
+        <div class="arrow-down"></div>
+        <div class="arrow-down"></div>
+      </div>
+    </div>
+
+    <div class="text-box mb-4 endnotes">
+      <h3>Lorem ipsum</h3>
+      <p>Lorem lorem lorem ipsum</p>
+    </div>
+
+    <div class="header-box">
       <div class="summary header">
         <h3>THE NEXT STEPS</h3>
         <div class="arrow-down"></div>

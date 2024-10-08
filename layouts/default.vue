@@ -8,14 +8,15 @@
 
       <h3 class="text-4xl uppercase mb-4 font-mono text-red-400 pt-12">
         While the initial drive came top-down from politics,
-        <b class="highlight-background">the people are shaping the project to make it actually work for the city</b>.
+        <b class="highlight-background">the people are shaping the project to make it actually work for the city</b>, 
+        <i class="smaller-text">with the mayor's office vetoing the ecologically disastrous old plan early October 2024 after various groups made themselves heard</i>.
       </h3>
 
 
       <div class="bg-gray-500 text-gray-100 text-center">
         <div class="w-full background-banner flashy-banner-text">
           
-          <h3 class="text-4xl uppercase mb-4 font-mono pt-12">Time for Linz to be Heard!</h3>
+          <h3 class="text-4xl uppercase mb-4 font-mono pt-12">Time for Linz to be Heard, Again!</h3>
 
           <h2 class="text-5xl uppercase mb-4 font-mono pt-30">Let's move the university to PostCity</h2>
 
@@ -180,6 +181,12 @@ export default {
   padding: 0.2em 0.4em;
   border-radius: 4px;
 }
+
+.smaller-text {
+  font-size: 0.75em; /* Adjust as needed */
+  vertical-align: middle;
+}
+
 
 .cta-button {
   background: linear-gradient(45deg, #ff4d4d, #ff0000); /* Gradient for a glossy look */
