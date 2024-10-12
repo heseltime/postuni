@@ -2,14 +2,13 @@
   <div class="bg-gray-500 text-gray-100 text-center pb-2">
     <div class="w-full background-banner">
       
-      <h3 class="text-4xl uppercase mb-4 font-mono text-white-400 pt-12">Let's get this right for Linz in 2024</h3>
+      <h3 class="text-4xl uppercase mb-4 font-mono text-white-400 pt-12">Let's get this right, Now, and for Linz</h3>
 
       <h2 class="text-5xl uppercase mb-4 font-mono pt-30">PostCity x IT-U (postuni)</h2>
 
       <h3 class="text-4xl uppercase mb-4 font-mono text-red-400 pt-12">
         While the initial drive came top-down from politics,
-        <b class="highlight-background">the people are shaping the project to make it actually work for the city</b>, 
-        <i class="smaller-text">with the mayor's office vetoing the ecologically disastrous old plan early October 2024 after various groups made themselves heard</i>.
+        <b class="highlight-background">the people are shaping the project to make it actually work for the city</b>
       </h3>
 
 
@@ -31,23 +30,30 @@
       <h5 class="text-md text-white-400">
         Now that the city <a href="https://www.nachrichten.at/politik/landespolitik/stadt-linz-zieht-bei-der-umwidmung-fuer-die-itu-die-notbremse;art383,3989606?utm_source=browser&utm_medium=push-notification&utm_campaign=cleverpush-1728293690" target="_blank">has backtracked</a> on the planned Dornach "Grüngürtel" extension, here is another chance for the PostCity location, the place where the university began.
       </h5>
+      <h3 class="text-4xl uppercase mb-4 font-mono text-red-400 pt-12">
+        <i class="smaller-text text-red-400">Thank you to those officials involved, for listening to the people, and stopping the ecologically disastrous old plan in October 2024: <b>this initiative aims to continue the colaborative dialog</b>, for Linz, its people, and the tech scene too - since we all stand to profit from doing this long-term project right</i>.
+      </h3>
       <h3 class="text-md text-gray-300">Don't put short-term, boring business-as-usual before a truly transformative project opportunity, with, yes, business value as well, dear officials, business representatives, and <b>Österreichische Post AG, "the Post"</b>* -</h3>
       <h4 class="text-md text-gray-300">* <b>Current Owner of PostCity</b>. In turn, the Post is majority-owned by <a href="https://oebag.gv.at">OEBAG, Österreichische Beteiligungs AG</a>, legally mandated to make long-term, AT-serving decisions, after all!</h4>
-      <h3 class="text-md text-gray-300">If Linz wants to continue to be a creative hub, it's <b>time to put the money where the mouth is</b>. <i>Why Linz to begin with? We will outline the answers to these underlying questions below.</i></h3>
-      <h4 class="text-md text-gray-300">When you are ready to support us, you will need to make yourself heard by the right city and other government officials as well as businesspeople running OEBAG and the Post.</h4>
+      <h3 class="text-md text-gray-300">If Linz wants to continue to be a creative hub, it's <b>time to put the money where the mouth is</b>.</h3>
 
-      <!-- Call to Action Button -->
-      <button class="cta-button">Get Involved Now</button>
+        <!-- Call to Action Button -->
+        <button class="cta-button">Get Involved Now</button>
+
+        <!-- Fold-out or pop-up form/phone numbers, etc. -->
+
+      <h4 class="text-md text-gray-300 mt-5">When you are ready to support us, you will need to make yourself heard by the right city and other government officials as well as businesspeople running OEBAG and the Post.</h4>
 
       <h3 class="text-4xl uppercase mb-4 font-mono text-white-400 pt-12">**Who are we?</h3>
 
-      <h4>We are an unlikely grouping iterested in a sutainable, smart, relevant and promising development of the university sector in Linz that still goes together with economic prowess. <b>But above all, we are Linzer.</b> And students.</h4>
+      <h4>We are an unlikely grouping iterested in a sutainable, smart, relevant and promising development of the university sector in Linz that still goes together with economic prowess. <b>But above all, we are Linzer.</b> And we are students too.</h4>
 
       <!-- IT-U Founding Lab? -->
       <!-- Kunstuni -->
       <!-- KHJ -->
 
-      <h4><b>Email us if you have an idea and/or want to help drive this action for Linz!</b></h4>
+      <h4><b>Contact us if you have an idea and/or want to help drive this action for Linz!</b></h4>
+      <!-- Link to footer with people, photos, links and contact opportunities -->
     </div>
 
 
