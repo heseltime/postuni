@@ -29,12 +29,12 @@
       <div class="highlight-text-intro pb-64 text-center">
       <h3 class="text-4xl uppercase mb-4 font-mono text-white-400 pt-12">What is this about and why now?</h3>
       <h5 class="text-md text-white-400">
-        Now that the city <a href="https://www.nachrichten.at/politik/landespolitik/stadt-linz-zieht-bei-der-umwidmung-fuer-die-itu-die-notbremse;art383,3989606?utm_source=browser&utm_medium=push-notification&utm_campaign=cleverpush-1728293690" target="_blank">has backtracked</a> on the planned Dornach "Grüngürtel" extension, here is another chance for the PostCity location.
+        Now that the city <a href="https://www.nachrichten.at/politik/landespolitik/stadt-linz-zieht-bei-der-umwidmung-fuer-die-itu-die-notbremse;art383,3989606?utm_source=browser&utm_medium=push-notification&utm_campaign=cleverpush-1728293690" target="_blank">has backtracked</a> on the planned Dornach "Grüngürtel" extension, here is another chance for the PostCity location, the place where the university began.
       </h5>
-      <h3 class="text-md text-gray-300">Don't put short-term, boring business-as-usual before a truly transformative project opportunity, with, yes, business value as well, dear <b>Österreichische Post</b>* -</h3>
-      <h4 class="text-md text-gray-300">* <b>Current Owner of PostCity</b></h4>
-      <h3 class="text-md text-gray-300">If Linz wants to continue to be a creative hub, it's <b>time to put the money where the mouth is</b>. Here's our** idea:</h3>
-      <h4 class="text-md text-gray-300">This requires making yourself heard by city and government officials as well as private businesspeople owning the property in question.</h4>
+      <h3 class="text-md text-gray-300">Don't put short-term, boring business-as-usual before a truly transformative project opportunity, with, yes, business value as well, dear officials, business representatives, and <b>Österreichische Post AG, "the Post"</b>* -</h3>
+      <h4 class="text-md text-gray-300">* <b>Current Owner of PostCity</b>. In turn, the Post is majority-owned by <a href="https://oebag.gv.at">OEBAG, Österreichische Beteiligungs AG</a>, legally mandated to make long-term, AT-serving decisions, after all!</h4>
+      <h3 class="text-md text-gray-300">If Linz wants to continue to be a creative hub, it's <b>time to put the money where the mouth is</b>. <i>Why Linz to begin with? We will outline the answers to these underlying questions below.</i></h3>
+      <h4 class="text-md text-gray-300">When you are ready to support us, you will need to make yourself heard by the right city and other government officials as well as businesspeople running OEBAG and the Post.</h4>
 
       <!-- Call to Action Button -->
       <button class="cta-button">Get Involved Now</button>

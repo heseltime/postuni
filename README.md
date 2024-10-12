@@ -10,6 +10,9 @@ This is a scrollytelling SPA based on the mock-up delivered by the Reporters Tea
 
 ## 🛠️ Local SPA Build Setup
 
+[!Attention]
+Using Node.js v18.20.4 for deployment purposes, in a conda environment locally.
+
 ```bash
 # 📦 install dependencies
 $ npm install
