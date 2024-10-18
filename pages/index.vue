@@ -124,7 +124,7 @@
       </Scrollama>
     </div>
 
-    <div class="header-box">
+    <div class="header-box-yellow">
       <div class="intro header">
         <h3>THE VISION</h3>
         <div class="arrow-down"></div>
@@ -132,10 +132,12 @@
         <div class="arrow-down"></div>
       </div>
     </div>
-    
+
     <div class="text-box mb-4">
-      <h3>Make It Yellow!</h3>
-      <p>You can take the yellow in the following designs to be the manifold spaces for creative transformation, aligned with the new Interdisciplinary Transformation University's mandate.</p>
+      <h3>Make It <span class="color-yellow">Yellow!</span></h3>
+      <p class="color-black">You can take the yellow in the following designs to be the manifold spaces for creative transformation, aligned with the new Interdisciplinary Transformation University's mandate.</p> 
+      
+      <p class="mt-2">The university itself does not need to be yellow, we would agree.</p>
     </div>
 
     <Scrollama
@@ -154,8 +156,7 @@
     </Scrollama>
 
     <div class="image-container">
-      <img src="~/assets/img/plan_1.png" alt="PostCity Banner" class="full" />
-      <img src="~/assets/img/plan_2.png" alt="PostCity Banner" class="full" />
+      <h3 class="text-3xl uppercase mb-4 font-mono text-blue-300 mt-5 center">Some <b>->Q&A<-</b></h3>  
 
       <p class="text-box-inside">
         Are these designs final?
@@ -166,70 +167,28 @@
       </p>
 
       <p class="text-box-inside">
-        Why would this amazing location be used for anything but a truly transformational project, or this university be put at an ordinary location? (Not to say a green field.)
+        Why would this amazing location be used for anything but a truly transformational project, or this university be put at an ordinary location? (Not to say a green field.) In other words, what is the reasoning for not doing exactly this, which does somehow seem pretty obvious?
       </p>
 
       <p class="text-box-inside">
-        A lot of people have been wondering this and now a collective of groups is taking action: fact is, the <b>decisions so far have been happening in the background</b>, driven by business-only and a non-pariticpatory political mindset. We want to change this and present a concept that is truly transformational and inclusive.
+        A lot of people have been wondering this and now a collective of groups is taking action: fact is, the <b>decisions so far have been happening in the background</b>, probably driven by business-only (and business-as-usual) and certainly a non-participatory-democracy mindset. We want to change this and present a concept that is truly transformational and inclusive.
       </p>
-    </div>
 
-    <h3 class="text-3xl uppercase mb-4 font-mono text-blue-300 mt-5">So <b>->WHO<-</b> are we? <b>IN DETAIL</b></h3>  
+      <p class="text-box-inside">
+        And since this has been in the news: What about Wels and Steyr?
+      </p>
 
-    <div class="header-box">
-      <div class="info header">
-        <h3>Collective:Detention</h3>
-        <div class="arrow-down"></div>
-        <div class="arrow-down"></div>
-        <div class="arrow-down"></div>
-      </div>
-    </div>
+      <p class="text-box-inside">
+        Apart from the fact that <b>Linz is the IT capital of Upper Austria</b>, aligning with the academic focus of this university, along with the fact that <b>Linz is the main university city of Upper Austria and the interdisciplinary orientation of this university would suggest an exchange with the other universities</b>, with the original decision to place the university in Linz <b>a whole cohort of staff, professors and now students have already started a new part of their life in Linz</b>, which makes a fundamental change of location like this very difficult and potentially damaging.
+      </p>
 
-    <div class="text-box mb-4">
-      <h3>Lorem ipsum</h3>
-      <p>Lorem lorem lorem ipsum</p>
-    </div> 
-    
-    <div class="header-box">
-      <div class="info header">
-        <h3>Founding Lab</h3>
-        <div class="arrow-down"></div>
-        <div class="arrow-down"></div>
-        <div class="arrow-down"></div>
-      </div>
-    </div>
+      <p class="text-box-inside">
+        So what <i>are</i> the people directly involved saying?
+      </p>
 
-    <div class="text-box mb-4 endnotes">
-      <h3>Lorem ipsum</h3>
-      <p>Lorem lorem lorem ipsum</p>
-    </div>
-
-    <div class="header-box">
-      <div class="info header">
-        <h3>Catholic Univ. Youth</h3>
-        <div class="arrow-down"></div>
-        <div class="arrow-down"></div>
-        <div class="arrow-down"></div>
-      </div>
-    </div>
-
-    <div class="text-box mb-4 endnotes">
-      <h3>Lorem ipsum</h3>
-      <p>Lorem lorem lorem ipsum</p>
-    </div>
-
-    <div class="header-box">
-      <div class="summary header">
-        <h3>THE NEXT STEPS</h3>
-        <div class="arrow-down"></div>
-        <div class="arrow-down"></div>
-        <div class="arrow-down"></div>
-      </div>
-    </div>
-
-    <div class="text-box mb-4 endnotes">
-      <h3>Lorem ipsum</h3>
-      <p>Lorem lorem lorem ipsum</p>
+      <p class="text-box-inside">
+        It is important to note that the content of this website is not a statement from the IT:U, who have also not issued a statement in any other venue, but does reflect the <b>voice of various groups in the vicinity of the project: starting with the very first students at the university</b>!
+      </p>
     </div>
 
   </div>
@@ -239,9 +198,9 @@
 export default {
   data () {
     return {
-      steps: [{ id: '1', image: require('../assets/img/postUNI@daniel_schöngruber_1.jpg') }//,
-      //{ id: '2', image: require('../assets/img/plan_1.png') },
-      //{ id: '3', image: require('../assets/img/plan_2.png') }
+      steps: [{ id: '1', image: require('../assets/img/postUNI@daniel_schöngruber_1.jpg') },
+      { id: '2', image: require('../assets/img/plan_1.png') },
+      { id: '3', image: require('../assets/img/plan_2.png') }
       ],
       imageReplacement: require('../assets/img/postUNI@daniel_schöngruber_2.png'),
       stepsSticky: [{ id: '75', text: 'Students' }, { id: '21', text: 'Fellows' }, { id: '6', text: 'Topics' }, { id: '1', text: 'New University' }],
@@ -285,7 +244,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .graphic {
   height: 80vh;
 }
@@ -312,6 +271,12 @@ export default {
 
   .header-box {
     background-color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .header-box-yellow {
+    background-color: #fde047;
     padding: 10px;
     margin-bottom: 20px;
   }
@@ -513,7 +478,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* Align chat messages to the left */
-  background-color: white;
+  background-color: #f8dc6c;
   border: 1px solid black;
   padding: 20px;
   border-radius: 8px;
@@ -539,6 +504,10 @@ export default {
 .text-box-inside:nth-child(even) {
   align-self: flex-end;        /* Align even messages to the right */
   background-color: #d1e7dd;   /* Light green background for even messages */
+}
+
+.color-yellow {
+  color: #fde047;
 }
 
 </style>

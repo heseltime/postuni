@@ -1,84 +1,184 @@
 <template>
-  <div class="bg-gray-500 text-gray-100 text-center pb-2">
-    <div class="w-full background-banner">
-      
-      <h3 class="text-4xl uppercase mb-4 font-mono text-white-400 pt-12">Let's get this right, Now, and for Linz</h3>
+  <div>
+    <!-- Layout Wrapper -->
+    <!-- ... and Header -->
+    <div class="bg-gray-500 text-gray-100 text-center pb-2">
+      <div class="w-full background-banner">
+        
+        <h3 class="text-4xl uppercase mb-4 font-mono text-white-400 pt-12">Let's get this right, Now, and for Linz</h3>
 
-      <h2 class="text-5xl uppercase mb-4 font-mono pt-30">PostCity x IT-U (postuni)</h2>
+        <h2 class="text-5xl uppercase mb-4 font-mono pt-30">PostCity x IT-U (postuni)</h2>
 
-      <h3 class="text-4xl uppercase mb-4 font-mono text-red-400 pt-12">
-        While the initial drive came top-down from politics,
-        <b class="highlight-background">the people are shaping the project to make it actually work for the city</b>
-      </h3>
+        <h3 class="text-4xl uppercase mb-4 font-mono text-red-400 pt-12">
+          While the initial drive came top-down from politics,
+          <b class="highlight-background">the people are shaping the project to make it actually work for the city</b>
+        </h3>
 
 
-      <div class="bg-gray-500 text-gray-100 text-center">
-        <div class="w-full background-banner flashy-banner-text">
-          
-          <h3 class="text-4xl uppercase mb-4 font-mono pt-12">Time for Linz to be Heard, Again!</h3>
+        <div class="bg-gray-500 text-gray-100 text-center">
+          <div class="w-full background-banner flashy-banner-text">
+            
+            <h3 class="text-4xl uppercase mb-4 font-mono pt-12">Time for Linz to be Heard, Again!</h3>
 
-          <h2 class="text-5xl uppercase mb-4 font-mono pt-30">Let's move the university to PostCity</h2>
+            <h2 class="text-5xl uppercase mb-4 font-mono pt-30">Let's move the university to PostCity</h2>
 
+          </div>
+        </div>
+
+      </div>
+
+      <div class="max-w-3xl w-full mx-auto px-8 pt-10">
+        <div class="highlight-text-intro pb-64 text-center">
+        <h3 class="text-4xl uppercase mb-4 font-mono text-white-400 pt-12">What is this about and why now?</h3>
+        <h5 class="text-md text-white-400">
+          Now that the city <a href="https://www.nachrichten.at/politik/landespolitik/stadt-linz-zieht-bei-der-umwidmung-fuer-die-itu-die-notbremse;art383,3989606?utm_source=browser&utm_medium=push-notification&utm_campaign=cleverpush-1728293690" target="_blank">has backtracked</a> on the planned Dornach "Grüngürtel" extension, here is another chance for the PostCity location, the place where the university began.
+        </h5>
+        <h3 class="text-4xl uppercase mb-4 font-mono text-red-400 pt-12">
+          <i class="smaller-text text-red-400">Thank you to those officials involved, for listening to the people, and stopping the ecologically disastrous old plan in October 2024: <b>this initiative aims to continue the colaborative dialog</b>, for Linz, its people, and the tech scene too - since we all stand to profit from doing this long-term project right</i>.
+        </h3>
+        <h3 class="text-md text-gray-300">Don't put short-term, boring business-as-usual before a truly transformative project opportunity, with, yes, business value as well, dear officials, business representatives, and <b>Österreichische Post AG, "the Post"</b>* -</h3>
+        <h4 class="text-md text-gray-300">* <b>Current Owner of PostCity</b>. In turn, the Post is majority-owned by <a href="https://oebag.gv.at">OEBAG, Österreichische Beteiligungs AG</a>, legally mandated to make long-term, AT-serving decisions, after all!</h4>
+        <h3 class="text-md text-gray-300">If Linz wants to continue to be a creative hub, it's <b>time to put the money where the mouth is</b>.</h3>
+
+          <!-- Call to Action Button -->
+          <button class="cta-button">Get Involved Now</button>
+
+          <!-- Fold-out or pop-up form/phone numbers, etc. -->
+
+        <h4 class="text-md text-gray-300 mt-5">When you are ready to support us, you will need to make yourself heard by the right city and other government officials as well as businesspeople running OEBAG and the Post.</h4>
+
+        <h3 class="text-4xl uppercase mb-4 font-mono text-white-400 pt-12">**Who are we?</h3>
+
+        <h4>We are an unlikely grouping iterested in a sutainable, smart, relevant and promising development of the university sector in Linz that still goes together with economic prowess. <b>But above all, we are Linzer.</b> And we are students too.</h4>
+
+      </div>
+
+
+      <Nuxt /> <!-- Main App/Content: Pagination Could Grab This -->
+
+      <!--<div class="pb-64 text-center">
+        <NuxtLink v-for="page in pages" :key="page" :to="page" class="underline mx-4">
+          <span class="main-link" v-if="page == '/'">PostCity</span>
+          <span class="secondary-link" v-else>+ {{ page }}</span>
+        </NuxtLink>
+      </div>-->
+
+      </div>
+    </div>
+
+    <!-- A Message from the Found Lab -->
+    <div class="bg-yellow text-gray-100 text-center pb-2">
+      <div class="max-w-3xl w-full mx-auto px-8 pt-10">
+      <h3 class="text-3xl uppercase mb-4 font-mono text-blue-300 mt-5">Now a <b>->MESSAGE<-</b> from the <b>IT:U'S FIRST STUDENTS</b></h3>  
+
+      <div class="header-box">
+        <div class="info header">
+          <h3>FOUNDING LAB</h3>
+          <div class="arrow-down"></div>
+          <div class="arrow-down"></div>
+          <div class="arrow-down"></div>
         </div>
       </div>
 
+      <div class="text-box mb-4">
+        <h3>Lorem ipsum</h3>
+        <p>Lorem lorem lorem ipsum</p>
+      </div> 
+      </div>
     </div>
 
-    <div class="max-w-3xl w-full mx-auto px-8 pt-10">
-      <div class="highlight-text-intro pb-64 text-center">
-      <h3 class="text-4xl uppercase mb-4 font-mono text-white-400 pt-12">What is this about and why now?</h3>
-      <h5 class="text-md text-white-400">
-        Now that the city <a href="https://www.nachrichten.at/politik/landespolitik/stadt-linz-zieht-bei-der-umwidmung-fuer-die-itu-die-notbremse;art383,3989606?utm_source=browser&utm_medium=push-notification&utm_campaign=cleverpush-1728293690" target="_blank">has backtracked</a> on the planned Dornach "Grüngürtel" extension, here is another chance for the PostCity location, the place where the university began.
-      </h5>
-      <h3 class="text-4xl uppercase mb-4 font-mono text-red-400 pt-12">
-        <i class="smaller-text text-red-400">Thank you to those officials involved, for listening to the people, and stopping the ecologically disastrous old plan in October 2024: <b>this initiative aims to continue the colaborative dialog</b>, for Linz, its people, and the tech scene too - since we all stand to profit from doing this long-term project right</i>.
-      </h3>
-      <h3 class="text-md text-gray-300">Don't put short-term, boring business-as-usual before a truly transformative project opportunity, with, yes, business value as well, dear officials, business representatives, and <b>Österreichische Post AG, "the Post"</b>* -</h3>
-      <h4 class="text-md text-gray-300">* <b>Current Owner of PostCity</b>. In turn, the Post is majority-owned by <a href="https://oebag.gv.at">OEBAG, Österreichische Beteiligungs AG</a>, legally mandated to make long-term, AT-serving decisions, after all!</h4>
-      <h3 class="text-md text-gray-300">If Linz wants to continue to be a creative hub, it's <b>time to put the money where the mouth is</b>.</h3>
+    <!-- About Us Part -->
+    <div class="bg-blue text-gray-100 text-center pb-2">
+      <div class="max-w-3xl w-full mx-auto px-8 pt-10">
+      <h3 class="text-3xl uppercase mb-4 font-mono text-blue-300 mt-5">So <b>->WHO<-</b> are we? <b>IN DETAIL</b></h3>  
 
-        <!-- Call to Action Button -->
-        <button class="cta-button">Get Involved Now</button>
+      <div class="header-box">
+        <div class="info header">
+          <h3>COLLECTIVE:DETENTION</h3>
+          <div class="arrow-down"></div>
+          <div class="arrow-down"></div>
+          <div class="arrow-down"></div>
+        </div>
+      </div>
 
-        <!-- Fold-out or pop-up form/phone numbers, etc. -->
+      <div class="text-box mb-4">
+        <h3>Lorem ipsum</h3>
+        <p>Lorem lorem lorem ipsum</p>
+      </div> 
 
-      <h4 class="text-md text-gray-300 mt-5">When you are ready to support us, you will need to make yourself heard by the right city and other government officials as well as businesspeople running OEBAG and the Post.</h4>
+      <div class="header-box">
+        <div class="info header">
+          <h3>FOUNDING LAB</h3>
+          <div class="arrow-down"></div>
+          <div class="arrow-down"></div>
+          <div class="arrow-down"></div>
+        </div>
+      </div>
 
-      <h3 class="text-4xl uppercase mb-4 font-mono text-white-400 pt-12">**Who are we?</h3>
+      <div class="text-box mb-4">
+        <h3>Lorem ipsum</h3>
+        <p>Lorem lorem lorem ipsum</p>
+      </div> 
 
-      <h4>We are an unlikely grouping iterested in a sutainable, smart, relevant and promising development of the university sector in Linz that still goes together with economic prowess. <b>But above all, we are Linzer.</b> And we are students too.</h4>
+      <div class="header-box mt-5">
+        <div class="info header">
+          <h3>CATHOLIC UNIV. YOUTH</h3>
+          <div class="arrow-down"></div>
+          <div class="arrow-down"></div>
+          <div class="arrow-down"></div>
+        </div>
+      </div>
 
-      <!-- IT-U Founding Lab? -->
-      <!-- Kunstuni -->
-      <!-- KHJ -->
+      <div class="text-box mb-4 endnotes">
+        <h3>Lorem ipsum</h3>
+        <p>Lorem lorem lorem ipsum</p>
+      </div>
 
-      <h4><b>Contact us if you have an idea and/or want to help drive this action for Linz!</b></h4>
-      <!-- Link to footer with people, photos, links and contact opportunities -->
+      </div>
     </div>
 
+    <!-- Our Supporters Part -->
+    <div class="bg-green text-gray-100 text-center pb-2">
+      <div class="max-w-3xl w-full mx-auto px-8 pt-10">
+      <h3 class="text-3xl uppercase mb-4 font-mono text-blue-300 mt-5"><b>->OUR SUPPORTERS<-</b></h3>  
+      <div class="header-box">
+        <div class="info header">
+          <h3>RETTET DEN GRÜNGÜRTEL</h3>
+          <div class="arrow-down"></div>
+          <div class="arrow-down"></div>
+          <div class="arrow-down"></div>
+        </div>
+      </div>
 
-    <Nuxt />
+      <div class="text-box mb-4 endnotes">
+        <h3>Lorem ipsum</h3>
+        <p>Lorem lorem lorem ipsum</p>
+      </div>
 
-      <!--<div
-        class="fixed left-0 w-full h-0 border-t-2 border-dashed border-black"
-        :style="{ top: triggerTop + 'px' }"
-      >
-        <p>Offset: {{ offset }}</p>
-      </div>-->
-
-    <div class="pb-64 text-center">
-      <!--<NuxtLink v-for="page in pages" :key="page" :to="page" class="underline mx-4">
-        <span class="main-link" v-if="page == '/'">PostCity</span>
-        <span class="secondary-link" v-else>+ {{ page }}</span>
-      </NuxtLink>-->
-
-      <h3 class="text-4xl uppercase mb-4 font-mono text-white-400 pt-12">Imprint</h3>
-
-      
-
+      </div>
     </div>
 
+    <!-- Footer -->
+    <div class="bg-black text-gray-100 text-center pb-2">
+      <div class="max-w-3xl w-full mx-auto px-8 pt-10">
+
+      <div class="header-box">
+        <div class="summary header">
+          <h3>THE NEXT STEPS</h3>
+          <div class="arrow-down"></div>
+          <div class="arrow-down"></div>
+          <div class="arrow-down"></div>
+        </div>
+      </div>
+
+      <div class="text-box mb-4 endnotes">
+        <h3>Lorem ipsum</h3>
+        <p>Lorem lorem lorem ipsum</p>
+      </div>
+
+      </div>
     </div>
+
   </div>
 </template>
 
@@ -86,9 +186,9 @@
 export default {
   data () {
     return {
-      pages: ['/', 'Basic', 'Progress', 'StickyGraphic1', 'StickyGraphic2'],
-      triggerTop: 0,
-      offset: 0.6
+      //pages: ['/', 'Basic', 'Progress', 'StickyGraphic1', 'StickyGraphic2'],
+      //triggerTop: 0,
+      //offset: 0.6,
     }
   },
   mounted () {
@@ -103,7 +203,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .main-link {
   font-size: 2em;
 }
@@ -248,6 +348,16 @@ export default {
   opacity: 1; /* Adds an extra layer for a glossier effect on hover */
 }
 
+.bg-blue {
+  background-color: #2596be;
+}
 
+.bg-yellow {
+  background-color: #f8dc6c;
+}
+
+.bg-green {
+  background-color: #d0d410;
+}
 
 </style>
