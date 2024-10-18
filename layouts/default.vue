@@ -63,6 +63,17 @@
         </NuxtLink>
       </div>-->
 
+      <h3 class="text-md text-gray-300 mt-5">Read on to <b>hear directly from the various groups coming together to form this initiative</b>, or ...</h3>
+      
+      <h3 class="text-4xl uppercase mb-4 font-mono text-red-400 pt-12">
+        <i class="smaller-text text-red-400">If you have already heard enough arguments and <b>if you are ready to take action</b>, then:</i>
+      </h3>
+
+      <!-- Call to Action Button 2 -->
+      <button class="cta-button">Get Involved Now</button>
+
+      <div class="con-belt"></div>
+
       </div>
     </div>
 
@@ -158,7 +169,7 @@
       </div>
     </div>
 
-    <!-- Footer -->
+    <!-- Footer (1) End-Notes Section -->
     <div class="bg-black text-gray-100 text-center pb-2">
       <div class="max-w-3xl w-full mx-auto px-8 pt-10">
 
@@ -171,10 +182,23 @@
         </div>
       </div>
 
-      <div class="text-box mb-4 endnotes">
+      <div class="text-box mb-2 endnotes">
         <h3>Lorem ipsum</h3>
         <p>Lorem lorem lorem ipsum</p>
       </div>
+
+      <h3 class="text-4xl uppercase mb-4 font-mono text-red-400">
+        <i class="smaller-text text-red-400">If you are convinced, we would be honored and grateful if you <b>join us to take action</b>:</i>
+      </h3>
+
+      <!-- Call to Action Button 2 -->
+      <button class="cta-button">Get Involved Now</button>
+
+      <div class="con-belt"></div>
+
+      <!-- Footer (2) Imprint Section -->
+
+      <!-- Footer (3) Old-Site-Navigation -->
 
       </div>
     </div>

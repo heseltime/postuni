@@ -354,7 +354,7 @@ export default {
     linear-gradient(90deg, currentColor 50%, #0000 0) 0 100%;
   background-size: 10px calc(100% / 3);
   background-repeat: repeat-x;
-  animation: roll 0.25s infinite linear;
+  animation: roll 50s infinite linear; /* Slowed down to 2 seconds */
 }
 
 .con-belt-v {
@@ -367,12 +367,12 @@ export default {
     linear-gradient(0deg, currentColor 50%, #0000 0) 0 100%;
   background-size: 10px calc(100% / 3);
   background-repeat: repeat-y;
-  animation: roll 0.25s infinite linear;
+  animation: roll 2.8s infinite linear; /* Slowed down to 1.8 seconds */
 }
 
 @keyframes roll {
   100% {
-    background-position: -8px 0%, -8px 50%, -8px 100%;
+    background-position: -10px 0%, -20px 50%, -40px 100%;
   }
 }
 
