@@ -156,7 +156,7 @@
     </Scrollama>
 
     <div class="image-container">
-      <h3 class="text-3xl uppercase mb-4 font-mono text-blue-300 mt-5 center">Some <b>->Q&A<-</b></h3>  
+      <h3 class="glossy-heading text-3xl uppercase mb-4 font-mono text-blue-300 mt-5 center">Some <b>->Q&A<-</b></h3>  
 
       <p class="text-box-inside">
         Are these designs final?
@@ -189,6 +189,12 @@
       <p class="text-box-inside">
         It is important to note that the content of this website is not a statement from the IT:U, who have also not issued a statement in any other venue, but does reflect the <b>voice of various groups in the vicinity of the project: starting with the very first students at the university</b>!
       </p>
+
+      <div class="arrows-container">
+        <div class="arrow-down-2"></div>
+        <div class="arrow-down-2"></div>
+        <div class="arrow-down-2"></div>
+      </div>
     </div>
 
   </div>
@@ -276,9 +282,12 @@ export default {
   }
 
   .header-box-yellow {
-    background-color: #fde047;
-    padding: 10px;
-    margin-bottom: 20px;
+    background: linear-gradient(135deg, #ff6b6b, #ffd93d, #1dd3b0, #0078d7); /* Neon gradient background */
+    border: 5px solid #fde047; /* Keeps the yellow border */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds subtle shadow */
+    transition: background 0.5s ease-in-out;
   }
 
 .text-box {
@@ -477,11 +486,37 @@ export default {
 .image-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align chat messages to the left */
-  background-color: #f8dc6c;
-  border: 1px solid black;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark overlay */
+  border: 1px solid rgba(255, 223, 47, 0.9); /* Border with slightly less transparency */
   padding: 20px;
   border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  backdrop-filter: blur(10px); /* Optional: adds a blur effect for a glossy look */
+}
+
+/* Glossy heading similar to highlight-text-intro */
+.glossy-heading {
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background */
+  padding: 1em 2em;
+  border-radius: 8px;
+  color: #e0e6ed;
+  text-align: center;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4); /* Adds depth to the text */
+}
+
+/* Arrow styles similar to THE VISION section */
+.arrows-container {
+  margin-top: 10px;
+}
+
+.arrow-down-2 {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #000;
+  margin: 5px auto;
 }
 
 .text-box-inside {
