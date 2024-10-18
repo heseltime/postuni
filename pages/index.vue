@@ -158,19 +158,19 @@
       <img src="~/assets/img/plan_2.png" alt="PostCity Banner" class="full" />
 
       <p class="text-box-inside">
-        One simple idea can spark so much?
+        Are these designs final?
       </p>
 
       <p class="text-box-inside">
-        Yes, this transformation occurs in the dimensions Social Change, Ecology and Climate, Public Spaces and Transit, Global Communication, and City Politics.
+        No, they are one of <b>many options for a transformational opportunity in Linz</b>, where this transformation occurs in the dimensions Social Change, Ecology and Climate, Public Spaces and Transit, Global Communication, and City Politics.
       </p>
 
       <p class="text-box-inside">
-        Why would this amazing location be used for anything but a truly transformational project, or this university be put at an ordinary location?
+        Why would this amazing location be used for anything but a truly transformational project, or this university be put at an ordinary location? (Not to say a green field.)
       </p>
 
       <p class="text-box-inside">
-        A lot of people have been wondering this and now a collective of groups is taking action: fact is, the decisions so far have been happening in the background, driven by business-only and a non-pariticpatory political mindset. We want to change this and present a concept that is truly transformational and inclusive.
+        A lot of people have been wondering this and now a collective of groups is taking action: fact is, the <b>decisions so far have been happening in the background</b>, driven by business-only and a non-pariticpatory political mindset. We want to change this and present a concept that is truly transformational and inclusive.
       </p>
     </div>
 
