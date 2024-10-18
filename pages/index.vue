@@ -178,7 +178,7 @@
       </p>
 
       <p class="text-box-inside">
-        A lot of people have been wondering this and now a collective of groups is taking action: fact is, the <b>decisions so far have been happening in the background</b>, probably driven by business-only (and business-as-usual) and certainly a non-participatory-democracy mindset. We want to change this and present a concept that is truly transformational and inclusive.
+        A lot of people have been wondering this and now a collective of groups is taking action: fact is, the <b>decisions so far have been happening in the background</b>, probably driven by business-only (and business-as-usual) and certainly a non-participatory-democracy mindset. We want to change this and present a concept that is truly transformational and inclusive, in fact coming directly from students and concerned citizens of Linz.
       </p>
 
       <p class="text-box-inside">
@@ -194,7 +194,7 @@
       </p>
 
       <p class="text-box-inside">
-        It is important to note that the content of this website is not a statement from the IT:U, who have also not issued a statement in any other venue, but does reflect the <b>voice of various groups in the vicinity of the project: starting with the very first students at the university</b>!
+        It is important to note that the content of this website is not a statement from the IT:U, who have not issued a statement in any other venue so far, but does reflect the <b>voice of various groups in the vicinity of the project: starting with the very first students at the university</b>!
       </p>
 
       <div class="arrows-container">

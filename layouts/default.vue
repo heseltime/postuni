@@ -80,7 +80,7 @@
     <!-- A Message from the Found Lab -->
     <div class="bg-yellow text-gray-100 text-center pb-2">
       <div class="max-w-3xl w-full mx-auto px-8 pt-10">
-      <h3 class="text-3xl uppercase mb-4 font-mono text-blue-300 mt-5">Now a <b>->MESSAGE<-</b> from the <b>IT:U'S FIRST STUDENTS</b></h3>  
+      <h3 class="text-3xl uppercase mb-4 font-mono text-blue-300 mt-5">Now a <b>->MESSAGE<-</b> from <b>IT:U'S FIRST STUDENTS</b></h3>  
 
       <div class="header-box">
         <div class="info header">
@@ -95,10 +95,6 @@
         <h3>Lorem ipsum</h3>
         <p>Lorem lorem lorem ipsum</p>
       </div> 
-
-      <img src="~/assets/img/Modell-Gesamt-Atrium.jpeg" alt="From the Collective:Detention Model Makers" class="w-full mb-4" />
-
-      <img src="~/assets/img/Model-1.png" alt="From the Collective:Detention Model Makers" class="w-full mb-4" />
 
       <img src="~/assets/img/Städtebaumodell.jpeg" alt="From the Collective:Detention Model Makers" class="w-full mb-4" />
 
