@@ -124,7 +124,7 @@
         <p>Lorem lorem lorem ipsum</p>
       </div> 
 
-      <img src="~/assets/img/Firefly-1.jpg" alt="From the Collective:Detention Model Makers" class="w-full mb-4" />
+      <img src="~/assets/img/Firefly-2.jpg" alt="From the Collective:Detention Model Makers" class="w-full mb-4" />
 
       <div class="header-box">
         <div class="info header">
@@ -140,7 +140,7 @@
         <p>Lorem lorem lorem ipsum</p>
       </div> 
 
-      <img src="~/assets/img/Firefly-2.jpg" alt="From the Collective:Detention Model Makers" class="w-full mb-4" />
+      <img src="~/assets/img/Firefly-1.jpg" alt="From the Collective:Detention Model Makers" class="w-full mb-4" />
 
       <div class="header-box mt-5">
         <div class="info header">
@@ -176,6 +176,9 @@
         <h3>Lorem ipsum</h3>
         <p>Lorem lorem lorem ipsum</p>
       </div>
+
+      <h3 class="text-3xl uppercase mb-4 font-mono text-blue-300 mt-1"><b>->YOUR LOGO<- Here?</b></h3> 
+      <h3 class="text-md text-white mt-4">If you would like to appear as a supporter on this website, please write to: <b>contact@postuni.at</b></h3>
 
       </div>
     </div>

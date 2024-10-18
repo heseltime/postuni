@@ -8,6 +8,10 @@
       <div class="banner">
         <img src="~/assets/img/plants-banner.png" alt="PostCity Banner" />	
       </div>
+
+      <h3 class="text-4xl uppercase mb-4 font-mono text-white-400 pt-12">Transforming Infrastructure</h3>
+
+      <h4 class="text-md text-gray-300 mt-0 mb-5">This website tells a story, in pictures, of a spectacular piece of <b>old infrastructure</b>, and <b>what it could become for the new university in Linz</b>.</h4>
       
       <div class="header-box">
         <div class="intro header">
@@ -32,6 +36,9 @@
         <p>
           As an institution centered on interdisciplinary research, IT:U is determined to demonstrate that excellent science can be transformed into innovative products, services, and social advancements. With its unique mission, IT:U aims to empower students, scientists, and regional networks to drive transformative impact across Linz and beyond.
         </p>
+
+        <h3 class="text-4xl uppercase mb-4 font-mono text-white-400 pt-12">The University Is Called IT:U</h3>
+        <h2 class="glossy-bold-black-h2">IT:U x PostCity Is PostUni</h2>
       </div>
 
       <div class="full">
@@ -544,5 +551,21 @@ export default {
 .color-yellow {
   color: #fde047;
 }
+
+.glossy-bold-black-h2 {
+  font-size: 4em;               /* Large font size */
+  text-transform: uppercase;     /* Make the text uppercase */
+  font-weight: 800;              /* Extra bold font weight */
+  color: #000;                   /* Black text color */
+  background: linear-gradient(145deg, #1a1a1a, #4d4d4d); /* Subtle glossy gradient */
+  padding: 10px 20px;            /* Padding for spacing */
+  border-radius: 10px;           /* Rounded corners */
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3), /* Subtle shadow */
+              inset 0px -2px 6px rgba(255, 255, 255, 0.4); /* Inner shadow for glossy effect */
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4); /* Text shadow for depth */
+  letter-spacing: 1px;           /* Slightly increase letter spacing */
+  text-align: center;            /* Center align text */
+}
+
 
 </style>
