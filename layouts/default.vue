@@ -95,6 +95,13 @@
         <h3>Lorem ipsum</h3>
         <p>Lorem lorem lorem ipsum</p>
       </div> 
+
+      <img src="~/assets/img/Modell-Gesamt-Atrium.jpeg" alt="From the Collective:Detention Model Makers" class="w-full mb-4" />
+
+      <img src="~/assets/img/Model-1.png" alt="From the Collective:Detention Model Makers" class="w-full mb-4" />
+
+      <img src="~/assets/img/Städtebaumodell.jpeg" alt="From the Collective:Detention Model Makers" class="w-full mb-4" />
+
       </div>
     </div>
 
@@ -117,6 +124,8 @@
         <p>Lorem lorem lorem ipsum</p>
       </div> 
 
+      <img src="~/assets/img/Firefly-1.jpg" alt="From the Collective:Detention Model Makers" class="w-full mb-4" />
+
       <div class="header-box">
         <div class="info header">
           <h3>FOUNDING LAB</h3>
@@ -130,6 +139,8 @@
         <h3>Lorem ipsum</h3>
         <p>Lorem lorem lorem ipsum</p>
       </div> 
+
+      <img src="~/assets/img/Firefly-2.jpg" alt="From the Collective:Detention Model Makers" class="w-full mb-4" />
 
       <div class="header-box mt-5">
         <div class="info header">
@@ -186,6 +197,8 @@
         <h3>Lorem ipsum</h3>
         <p>Lorem lorem lorem ipsum</p>
       </div>
+
+      <img src="~/assets/img/linienplan.jpg" alt="From the Collective:Detention Model Makers" class="w-full mb-4" />
 
       <h3 class="text-4xl uppercase mb-4 font-mono text-red-400">
         <i class="smaller-text text-red-400">If you are convinced, we would be honored and grateful if you <b>join us to take action</b>:</i>
