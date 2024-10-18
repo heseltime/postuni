@@ -126,7 +126,7 @@
 
     <div class="header-box">
       <div class="intro header">
-        <h3>THE FOUNDING LAB</h3>
+        <h3>THE VISION</h3>
         <div class="arrow-down"></div>
         <div class="arrow-down"></div>
         <div class="arrow-down"></div>
@@ -134,8 +134,9 @@
     </div>
     
     <div class="text-box mb-4">
-      <h3>Topic Groups</h3>
-      <p>Lorem lorem lorem ipsum</p>
+      <h3>Make It Yellow!</h3>
+      <p>You can take the yellow in the following designs to be the manifold spaces for creative transformation, aligned with the new Interdisciplinary Transformation University's mandate.</p>
+      <p>This transformation occurs in the dimensions Social Change, Ecology and Climate, Public Spaces and Transit, Global Communication, and City Politics.</p>
     </div>
 
     <Scrollama
@@ -148,7 +149,6 @@
           :key="step.id"
           :data-step-id="step.id"
           class="my-64 border border-black flex justify-center items-center"
-          :class="{ 'bg-yellow-300': activeStepId === step.id }"
         >
           <img :src="step.image" :alt="step.id" class="topic-group-steps" />
         </div>
@@ -156,7 +156,7 @@
 
     <div class="header-box">
       <div class="info header">
-        <h3>THE ART UNIVERSITY</h3>
+        <h3>Collective:Detention</h3>
         <div class="arrow-down"></div>
         <div class="arrow-down"></div>
         <div class="arrow-down"></div>
@@ -166,11 +166,25 @@
     <div class="text-box mb-4">
       <h3>Lorem ipsum</h3>
       <p>Lorem lorem lorem ipsum</p>
-    </div>  
+    </div> 
+    
+    <div class="header-box">
+      <div class="info header">
+        <h3>Founding Lab</h3>
+        <div class="arrow-down"></div>
+        <div class="arrow-down"></div>
+        <div class="arrow-down"></div>
+      </div>
+    </div>
+
+    <div class="text-box mb-4 endnotes">
+      <h3>Lorem ipsum</h3>
+      <p>Lorem lorem lorem ipsum</p>
+    </div>
 
     <div class="header-box">
       <div class="info header">
-        <h3>CATHOLIC UNIV. YOUTH</h3>
+        <h3>Catholic Univ. Youth</h3>
         <div class="arrow-down"></div>
         <div class="arrow-down"></div>
         <div class="arrow-down"></div>
@@ -203,18 +217,27 @@
 export default {
   data () {
     return {
-      steps: [{ id: '1', image: require('../assets/img/topicgroup-ai.png') }],
+      steps: [{ id: '1', image: require('../assets/img/postUNI@daniel_schöngruber_1.jpg') }],
       stepsSticky: [{ id: '75', text: 'Students' }, { id: '21', text: 'Fellows' }, { id: '6', text: 'Topics' }, { id: '1', text: 'New University' }],
       stepsSticky2: [{ id: 'I' }, { id: 'II' }, { id: 'III' }, { id: 'IV' }],
       activeStepId: null,
       activeStepIdSticky: 'A',
-      activeStepIdSticky2: 'I'
+      activeStepIdSticky2: 'I',
+      imageReplacement: require('../assets/img/postUNI@daniel_schöngruber_2.png')
     }
   },
   methods: {
-    stepEnterHandler ({ element, direction, index }) {
-      console.log('step-enter', { element, direction, index })
-      this.activeStepId = element.dataset.stepId
+    stepEnterHandler({ element }) {
+      const stepId = element.dataset.stepId;
+      this.activeStepId = stepId;
+
+      // Replace the image when the active step is '1'
+      if (stepId === '1') {
+        const stepIndex = this.steps.findIndex(step => step.id === '1');
+        if (stepIndex !== -1) {
+          this.steps[stepIndex].image = this.imageReplacement;
+        }
+      }
     },
     stepEnterHandlerSticky ({ element, direction, index }) {
       console.log('step-enter', { element, direction, index })
@@ -224,9 +247,16 @@ export default {
       console.log('step-enter', { element, direction, index })
       this.activeStepIdSticky2 = element.dataset.stepId
     },
-    stepExitHandler ({ element, direction, index }) {
-      console.log('step-exit', { element, direction, index })
-      this.activeStepId = null
+    stepExitHandler({ element }) {
+      const stepId = element.dataset.stepId;
+      if (stepId === '1') {
+        // Optionally reset the image when the step exits
+        const stepIndex = this.steps.findIndex(step => step.id === '1');
+        if (stepIndex !== -1) {
+          this.steps[stepIndex].image = require('../assets/img/postUNI@daniel_schöngruber_1.jpg');
+        }
+      }
+      this.activeStepId = null;
     }
   }
 }
@@ -430,6 +460,30 @@ export default {
 .highlighted-text-box-blue a:hover {
   color: #005a99; /* Darker blue on hover */
   border-color: #005a99; /* Matches hover color */
+}
+
+.bg-yellow-version {
+  background-color: #fde047;
+  border: 2px solid #fde047;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-image 0.5s ease-in-out;
+}
+
+.topic-group-steps {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.img-hidden {
+  opacity: 0;
+}
+
+.img-visible {
+  opacity: 1;
 }
 
 
