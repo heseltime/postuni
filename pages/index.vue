@@ -136,7 +136,6 @@
     <div class="text-box mb-4">
       <h3>Make It Yellow!</h3>
       <p>You can take the yellow in the following designs to be the manifold spaces for creative transformation, aligned with the new Interdisciplinary Transformation University's mandate.</p>
-      <p>This transformation occurs in the dimensions Social Change, Ecology and Climate, Public Spaces and Transit, Global Communication, and City Politics.</p>
     </div>
 
     <Scrollama
@@ -148,11 +147,34 @@
           v-for="step in steps"
           :key="step.id"
           :data-step-id="step.id"
-          class="my-64 border border-black flex justify-center items-center"
+          class="my-32 flex justify-center items-center"
         >
           <img :src="step.image" :alt="step.id" class="topic-group-steps" />
         </div>
     </Scrollama>
+
+    <div class="image-container">
+      <img src="~/assets/img/plan_1.png" alt="PostCity Banner" class="full" />
+      <img src="~/assets/img/plan_2.png" alt="PostCity Banner" class="full" />
+
+      <p class="text-box-inside">
+        One simple idea can spark so much?
+      </p>
+
+      <p class="text-box-inside">
+        Yes, this transformation occurs in the dimensions Social Change, Ecology and Climate, Public Spaces and Transit, Global Communication, and City Politics.
+      </p>
+
+      <p class="text-box-inside">
+        Why would this amazing location be used for anything but a truly transformational project, or this university be put at an ordinary location?
+      </p>
+
+      <p class="text-box-inside">
+        A lot of people have been wondering this and now a collective of groups is taking action: fact is, the decisions so far have been happening in the background, driven by business-only and a non-pariticpatory political mindset. We want to change this and present a concept that is truly transformational and inclusive.
+      </p>
+    </div>
+
+    <h3 class="text-3xl uppercase mb-4 font-mono text-blue-300 mt-5">So <b>->WHO<-</b> are we? <b>IN DETAIL</b></h3>  
 
     <div class="header-box">
       <div class="info header">
@@ -217,21 +239,22 @@
 export default {
   data () {
     return {
-      steps: [{ id: '1', image: require('../assets/img/postUNI@daniel_schöngruber_1.jpg') }],
+      steps: [{ id: '1', image: require('../assets/img/postUNI@daniel_schöngruber_1.jpg') }//,
+      //{ id: '2', image: require('../assets/img/plan_1.png') },
+      //{ id: '3', image: require('../assets/img/plan_2.png') }
+      ],
+      imageReplacement: require('../assets/img/postUNI@daniel_schöngruber_2.png'),
       stepsSticky: [{ id: '75', text: 'Students' }, { id: '21', text: 'Fellows' }, { id: '6', text: 'Topics' }, { id: '1', text: 'New University' }],
       stepsSticky2: [{ id: 'I' }, { id: 'II' }, { id: 'III' }, { id: 'IV' }],
       activeStepId: null,
       activeStepIdSticky: 'A',
-      activeStepIdSticky2: 'I',
-      imageReplacement: require('../assets/img/postUNI@daniel_schöngruber_2.png')
+      activeStepIdSticky2: 'I'
     }
   },
   methods: {
     stepEnterHandler({ element }) {
       const stepId = element.dataset.stepId;
       this.activeStepId = stepId;
-
-      // Replace the image when the active step is '1'
       if (stepId === '1') {
         const stepIndex = this.steps.findIndex(step => step.id === '1');
         if (stepIndex !== -1) {
@@ -486,5 +509,36 @@ export default {
   opacity: 1;
 }
 
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align chat messages to the left */
+  background-color: white;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.text-box-inside {
+  background-color: #e0e0e0;   /* Light gray for chat bubbles */
+  color: black;
+  padding: 15px;
+  border-radius: 15px;         /* Rounded corners to look like chat bubbles */
+  margin: 10px 0;
+  max-width: 80%;              /* Limit the width of the chat bubbles */
+  word-wrap: break-word;       /* Ensure long text breaks to new lines */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for the chat bubble effect */
+  text-align: left;            /* Ensure text is left-aligned inside the bubble */
+}
+
+.text-box-inside:nth-child(odd) {
+  align-self: flex-start;      /* Align odd messages to the left */
+  background-color: #f1f1f1;   /* Light background for odd messages */
+}
+
+.text-box-inside:nth-child(even) {
+  align-self: flex-end;        /* Align even messages to the right */
+  background-color: #d1e7dd;   /* Light green background for even messages */
+}
 
 </style>
