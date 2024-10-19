@@ -259,17 +259,13 @@
 
       <div class="con-belt"></div>
 
-      <!-- Footer (2) Imprint Section -->
-
-      <!-- Footer (3) Old-Site-Navigation -->
-
        <img src="~/assets/img/post-city-no-bg.png" alt="PostUni Logo" width="100" class="mb-5 mt-5 center logo" />
 
       </div>
 
       <p style="display: inline-flex; align-items: center;">
-        <img src="~/assets/img/heseltime-favicon-32x32.png" alt="heseltime Logo" width="16" style="margin-right: 5px;" />
-        <span><a href="https://heseltime.github.io/"><b>heseltime</b></a>: website design, deployment and content except where indicated. <b>Based on the original postuni.at-concept by Collective:Detention</b></span>
+        <a href="https://heseltime.github.io/"><img src="~/assets/img/heseltime-favicon-32x32.png" alt="heseltime Logo" width="16" style="margin-right: 5px;" /></a>
+        <span><a href="https://heseltime.github.io/"><b>heseltime</b></a>: website design, deployment and content except where indicated. <b style="text-decoration: underline;">Based on the original postuni.at-concept by Collective:Detention</b></span>
       </p>
 
     </div>
