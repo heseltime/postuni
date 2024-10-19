@@ -54,6 +54,8 @@
 
         <h4 class="text-md text-gray-300 mt-5">When you are ready to support us, you will need to make yourself heard by the right city and other government officials as well as businesspeople running OEBAG and the Post.</h4>
 
+        <img src="~/assets/img/post-city-post-uni-no-bg.png" alt="PostUni Logo" width="200" class="mb-0 mt-2" />
+
         <h3 class="text-4xl uppercase mb-4 font-mono text-white-400 pt-12">**Who are we?</h3>
 
         <h4>We are an unlikely grouping iterested in a sutainable, smart, relevant and promising development of the university sector in Linz that still goes together with economic prowess. <b>But above all, we are Linzer.</b> And we are students too.</h4>
@@ -236,6 +238,8 @@
       <!-- Footer (2) Imprint Section -->
 
       <!-- Footer (3) Old-Site-Navigation -->
+
+       <img src="~/assets/img/post-city-no-bg.png" alt="PostUni Logo" width="100" class="mb-5 mt-5 center logo" />
 
       </div>
     </div>
@@ -462,5 +466,10 @@ export default {
   color: #0077a8; /* Darker blue on hover */
 }
 
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 </style>
