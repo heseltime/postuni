@@ -266,6 +266,30 @@
        <img src="~/assets/img/post-city-no-bg.png" alt="PostUni Logo" width="100" class="mb-5 mt-5 center logo" />
 
       </div>
+
+      <p style="display: inline-flex; align-items: center;">
+        <img src="~/assets/img/heseltime-favicon-32x32.png" alt="heseltime Logo" width="16" style="margin-right: 5px;" />
+        <span><a href="https://heseltime.github.io/"><b>heseltime</b></a>: website design, deployment and content except where indicated. <b>Based on the original postuni.at-concept by Collective:Detention</b></span>
+      </p>
+
+    </div>
+
+    <div class="bg-white text-gray-100 text-center pb-2">
+      <div class="max-w-3xl w-full mx-auto px-8 pt-2 flex justify-between items-center">
+        <!-- Logo aligned to the left -->
+        <div class="logo-container">
+          <img src="~/assets/img/postuni-old-logo.jpg" alt="Logo Original Postuni" width="100" class="logo-left">
+        </div>
+
+        <!-- Inline link list -->
+        <div class="footer-links">
+          <a href="#project" class="footer-link">Project</a>
+          <a href="#planning" class="footer-link">Planning</a>
+          <a href="#research" class="footer-link">Research</a>
+          <a href="#component-scavenger-hunt" class="footer-link">Component Scavenger Hunt</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </div>
+      </div>
     </div>
 
   </div>
@@ -494,6 +518,40 @@ export default {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Styling for the footer */
+.bg-white {
+  background-color: #fff;
+  color: #333;
+  padding: 1.5em 0;
+}
+
+.logo-container {
+  flex-shrink: 0; /* Prevents the logo from shrinking */
+}
+
+.logo-left {
+  display: block;
+  margin-right: 15px; /* Adds spacing to the right of the logo */
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em; /* Spacing between links */
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #333; /* Link color */
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #0077a8; /* Hover color */
 }
 
 </style>
