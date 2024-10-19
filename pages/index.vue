@@ -37,7 +37,8 @@
           </p>
 
           <h3 class="text-4xl uppercase mb-4 font-mono text-white-400 pt-12">The University Is Called IT:U</h3>
-          <h2 class="glossy-bold-black-h2">IT:U x PostCity Is PostUni</h2>
+          <h2 class="glossy-bold-black-h2">IT:U x PostCity Is <span class="neon-flicker">PostUni</span></h2>
+
       </div>
 
       <div class="full">
@@ -45,12 +46,12 @@
         <div class="con-belt"></div>
       </div>
 
-      <h4 class="text-2xl uppercase mb-4 font-mono text-blue-300">Let's unpack this:</h4>
+      <h4 class="text-2xl uppercase mb-4 font-mono text-blue-300">Let's <b>go into</b> PostCity!</h4>
 
       <h3 class="text-3xl uppercase mb-4 font-mono text-blue-300">Why IT-U at PostCity <b>->NOW<-</b>? <b>IN DETAIL</b></h3>
 
       <div
-        class="graphic sticky top-0 border mt-20 flex items-center justify-center text-8xl"
+        class="graphic sticky top-0 mt-20 flex items-center justify-center text-8xl"
       >
         <!--{{ activeStepIdSticky }}-->
         <img src="~/assets/img/cnv-blt-vrt.png" alt="Conveyor Belt" class="bg-img" />	
@@ -61,18 +62,48 @@
         class="relative"
         @step-enter="stepEnterHandlerSticky"
       >
-        <div
-          v-for="step in stepsSticky"
-          :key="step.id"
-          :data-step-id="step.id"
-          class="cnv-blt-1 step my-64 h-48 w-48 mx-auto bg-yellow-300 border border-black flex justify-center items-center text-4xl uppercase mb-4 font-mono"
-          @step-enter="stepEnterHandlerSticky"
-        >
-          <span class="text-9xl text-gray-600">{{ step.id }}</span> {{ step.text }}
+      <div
+        v-for="step in stepsSticky"
+        :key="step.id"
+        :data-step-id="step.id"
+        class="cnv-blt-1 step my-64 h-auto w-auto mx-auto flex items-center justify-between p-4 text-4xl uppercase mb-4 font-mono"
+        @step-enter="stepEnterHandlerSticky"
+
+      >
+      <div class="hover-container">
+          <img
+            :src="step.image"
+            alt="Main Image"
+            class="main-image"
+          />
+          <div class="svg-glove">
+            <!-- SVG of a glove/hand -->
+            <svg viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg" class="glove-shape">
+              <!-- You can use a path or a shape resembling a glove or hand -->
+              <path d="M10 10 L30 10 C40 10, 50 20, 50 30 C50 40, 40 50, 30 50 L10 50 Z" fill="#333" />
+            </svg>
+          </div>
+          <div class="hover-box">
+            <span class="text-9xl text-gray-600">{{ step.id }}</span>
+            <p class="hover-description">{{ step.text }}</p>
+          </div>
         </div>
+      </div>
+
       </Scrollama>
 
     </div>
+
+    <h3 class="text-3xl uppercase mb-4 font-mono text-blue-300 mt-2">So Why <b>->ARE<-</b> Decision Makers Like This About It?</h3>
+
+    <!-- Ref. Once-In-A-Lifetime Oppt: Shrugging Guy Yellow Here, Also Pick Up Gloves Style -->
+    <img src="~/assets/img/shrug.gif" alt="PostCity City Model" class="" />
+
+    <h4>Where many people <b>across party-lines</b> are starting to see an opportunity, it sound like our politician-keaders see expensive private real estate development and a shopping mall thrown in, leading Linz down the road of <b>not just the ordinary and bland, but laying the groundwork for an undesirable urban social development in the century to come</b>.</h4>
+
+    <h3 class="text-4xl uppercase mb-4 font-mono text-red-400">
+      <i class="smaller-text text-red-400">We are convinced: <b>Linz can do better than business-as-usual here</b>.</i>
+    </h3>
 
     <div class="header-box">
       <div class="info header">
@@ -106,7 +137,7 @@
           <i>With 80,000 square meters usable space spread over several levels, a 4,000-meter long parcel distribution facility, a storage unit for 10,000 packages, an entire battery of 12-meter high spiral chutes, and a rail track hall that is around 240 meters long made for both incoming and outgoing railways, the post distribution center that was abandoned in 2014 offers almost limitless opportunities for artistic stagings by Ars Electronica.</i>
         </p>
         <h3 class="text-3xl uppercase mb-4 font-mono text-blue-300 mt-2">PostCity Is Just <b>->AN INSPIRING PLACE<-</b>: <b>Most Visitors to the Ars Electronica Festivals 2023 and 2024 Agree</b></h3>
-        <p><b>Endless open spaces, magical affordances like the postal slides, labarynthine corridors invite to play and to explore</b>: people do fall in love with this space itself and the fit for an insitution IT:U aims to be is apparent. More so, <b>we believe IT:U needs a space like PostCity to achieve its mission</b>.</p>
+        <p><b>Endless open spaces, magical affordances like the postal slides, labarynthine corridors invite to play and to explore</b>: people do fall in love with this space itself and the fit for the insitution IT:U aims to be is apparent. More so, <b>we believe IT:U needs a space like PostCity to achieve its mission</b>.</p>
         <div style="position: relative; padding-bottom: 56.25%; height: 0; max-width: 100%; overflow: hidden;" class="mt-3">
             <iframe 
                 src="https://www.youtube.com/embed/HmN03TQDCQo?start=14" 
@@ -239,7 +270,12 @@ export default {
       { id: '3', image: require('../assets/img/plan_2.png') }
       ],
       imageReplacement: require('../assets/img/postUNI@daniel_schöngruber_2.png'),
-      stepsSticky: [{ id: '75', text: 'Students' }, { id: '21', text: 'Fellows' }, { id: '6', text: 'Topics' }, { id: '1', text: 'New University' }],
+      stepsSticky: [
+        { id: '75', text: 'students founded the university here', image: require('../assets/img/spectacular.png') }, 
+        { id: '7000+', text: 'signatures against closing the Green Belt' }, 
+        { id: '7', text: 'Mayoral Candidates in 2024/25' }, 
+        { id: '1', text: 'university/once-in-a-lifetime' }
+      ],
       stepsSticky2: [{ id: 'I' }, { id: 'II' }, { id: 'III' }, { id: 'IV' }],
       activeStepId: null,
       activeStepIdSticky: 'A',
@@ -633,6 +669,149 @@ export default {
   text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4); /* Text shadow for depth */
   letter-spacing: 1px;           /* Slightly increase letter spacing */
   text-align: center;            /* Center align text */
+}
+
+.hover-container {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  max-width: 400px; /* Slightly smaller for the main image */
+  margin: 0 auto;
+}
+
+.main-image {
+  width: 100%; /* The main image will adjust to container width */
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease-in-out; /* Add a subtle shrink effect */
+}
+
+.hover-box {
+  position: absolute;
+  top: 50%;
+  left: -100%; /* Start outside of the container */
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+  padding: 20px;
+  width: 200px; /* Adjust width of the hover box */
+  transition: left 0.5s ease-in-out; /* Smooth slide-in transition */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for hover box */
+}
+
+.hover-container:hover .hover-box {
+  left: 105%; /* Slide the hover box in from the left */
+}
+
+.hover-container:hover .main-image {
+  transform: scale(0.9); /* Shrink the main image slightly on hover */
+}
+
+.hover-description {
+  font-size: 1.2em;
+  color: #333;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* New trailing arm style */
+.trailing-arm {
+  position: absolute;
+  top: 50%;
+  left: -100%;
+  height: 20px; /* Height of the arm */
+  width: 0; /* Initially hidden */
+  background-color: #555; /* Dark industrial color */
+  transform: translateY(-50%);
+  transition: width 0.5s ease-in-out; /* Matches the hover-box transition */
+}
+
+.hover-container:hover .trailing-arm {
+  width: calc(100% + 200px); /* Extends the arm to cover the image and text box width */
+  left: 0; /* Moves the arm in with the hover box */
+}
+
+.svg-glove {
+  position: absolute;
+  top: 50%;
+  left: -100%;
+  transform: translateY(-50%);
+  width: 50px; /* Adjust based on your SVG size */
+  height: 50px;
+  transition: left 0.5s ease-in-out; /* Same transition as the hover box */
+}
+
+.hover-container:hover .svg-glove {
+  left: 0; /* Move into view when hovered */
+}
+
+.glove-shape {
+  width: 100%; /* Adjust the width */
+  height: auto;
+  fill: #555; /* Industrial glove color */
+}
+
+.neon-flicker {
+  color: #00ffcc; /* Neon color */
+  text-shadow: 
+    0 0 5px #00ffcc, 
+    0 0 10px #00ffcc,
+    0 0 20px #00ffcc, 
+    0 0 40px #00ffcc, 
+    0 0 80px #00ffcc, 
+    0 0 120px #00ffcc; /* Glowing effect with multiple levels */
+  animation: flicker 2.5s infinite alternate;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.1;
+    text-shadow: 
+      0 0 5px #00ffcc, 
+      0 0 10px #00ffcc,
+      0 0 20px #00ffcc, 
+      0 0 40px #00ffcc, 
+      0 0 80px #00ffcc, 
+      0 0 120px #00ffcc;
+  }
+  10%, 70% {
+    opacity: 1;
+    text-shadow: 
+      0 0 5px #00ffcc, 
+      0 0 10px #00ffcc,
+      0 0 20px #00ffcc, 
+      0 0 40px #00ffcc, 
+      0 0 80px #00ffcc, 
+      0 0 120px #00ffcc;
+  }
+  80% {
+    opacity: 0.2;
+    text-shadow: 
+      0 0 5px #00ffcc, 
+      0 0 10px #00ffcc,
+      0 0 20px #00ffcc, 
+      0 0 40px #00ffcc;
+  }
+  90% {
+    opacity: 1;
+    text-shadow: 
+      0 0 5px #00ffcc, 
+      0 0 10px #00ffcc,
+      0 0 20px #00ffcc, 
+      0 0 40px #00ffcc, 
+      0 0 80px #00ffcc, 
+      0 0 120px #00ffcc;
+  }
+  100% {
+    opacity: 0.9;
+    text-shadow: 
+      0 0 5px #00ffcc, 
+      0 0 10px #00ffcc,
+      0 0 20px #00ffcc, 
+      0 0 40px #00ffcc;
+  }
 }
 
 
