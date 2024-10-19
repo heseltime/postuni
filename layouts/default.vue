@@ -109,13 +109,17 @@
         </div>
       </div>
 
-      <div class="text-box mb-4">
-        <h3>Lorem ipsum</h3>
-        <p>Lorem lorem lorem ipsum</p>
-      </div> 
+      <div class="highlighted-text-box mb-4">
+        <h3>Individual Voices from The Founding Lab</h3>
+        <h4><a href="https://postuni.at/en/">Book Link Perhaps</a></h4>
+        <h5>by Open!</h5>
+        <p>Voice 1: TODO!</p>
+        <h5>by Open!</h5>
+        <p>Voice 2: TODO!</p>
+      </div>
 
       <!-- group photo and book maybe -->
-       
+
       </div>
     </div>
 
@@ -133,10 +137,14 @@
         </div>
       </div>
 
-      <div class="text-box mb-4">
-        <h3>Lorem ipsum</h3>
-        <p>Lorem lorem lorem ipsum</p>
-      </div> 
+      <div class="highlighted-text-box mb-4">
+        <h3>What is the collective about?</h3>
+        <h4><a href="https://postuni.at/en/">Kunstuni Link Perhaps?</a></h4>
+        <h5>by Lisa Ackerl, Daniel Schöngruber, Marco Thaller</h5>
+        <p>Underused facilities and institutions in Linz like the postal distribution center PostCity, but also the slaughterhouse, or the Nestlé site are ready for new, versatile uses, which could be implemented in a climate- and environmentally-friendly manner within existing structures. Universities, along with their buildings and spaces, are essential, identity-shaping institutions within cities. Through students, educators, and infrastructure, they have the power to activate entire neighborhoods socially and economically as places to live and work. Over 26,000 people study in Linz, with around 3,000 more expected to join IT:U.
+          To fulfill the societal mission of a university, its impact should not dissipate on the outskirts of the city but rather be integrated into the urban fabric, enhancing the city’s social and economic potential.</p>
+        <p>Group Photo?</p>
+      </div>
 
       <img src="~/assets/img/Firefly-2.jpg" alt="From the Collective:Detention Model Makers" class="w-full mb-4" />
 
@@ -149,10 +157,13 @@
         </div>
       </div>
 
-      <div class="text-box mb-4">
-        <h3>Lorem ipsum</h3>
-        <p>Lorem lorem lorem ipsum</p>
-      </div> 
+      <div class="highlighted-text-box mb-4">
+        <h3>Starting a University: 2023 Ars Electronica Festival Recap and the 2024/25 Perspective</h3>
+        <h4><a href="https://postuni.at/en/">Book Link Perhaps</a></h4>
+        <h5>by Open! Quebi?</h5>
+        <p>TODO!</p>
+        <p>Group Photo?</p>
+      </div>
 
       <img src="~/assets/img/Firefly-1.jpg" alt="From the Collective:Detention Model Makers" class="w-full mb-4" />
 
@@ -165,9 +176,13 @@
         </div>
       </div>
 
-      <div class="text-box mb-4 endnotes">
-        <h3>Lorem ipsum</h3>
-        <p>Lorem lorem lorem ipsum</p>
+      <div class="highlighted-text-box mb-4">
+        <h3>(Re-)Thinking University-Impact - Socially, Ecologically - in Linz</h3>
+        <h4><a href="https://www.dioezese-linz.at/institution/8228/ueberuns/khjlvorstand201617">KHJ Leadership 2024/25</a></h4>
+        <h5>by Jack Heseltine</h5>
+        <p>Underused facilities and institutions in Linz like the postal distribution center PostCity, but also the slaughterhouse, or the Nestlé site are ready for new, versatile uses, which could be implemented in a climate- and environmentally-friendly manner within existing structures. Universities, along with their buildings and spaces, are essential, identity-shaping institutions within cities. Through students, educators, and infrastructure, they have the power to activate entire neighborhoods socially and economically as places to live and work. Over 26,000 people study in Linz, with around 3,000 more expected to join IT:U.
+          To fulfill the societal mission of a university, its impact should not dissipate on the outskirts of the city but rather be integrated into the urban fabric, enhancing the city’s social and economic potential.</p>
+        <p>Group Photo? Logo?</p>
       </div>
 
       </div>
@@ -186,9 +201,12 @@
         </div>
       </div>
 
-      <div class="text-box mb-4 endnotes">
-        <h3>Lorem ipsum</h3>
-        <p>Lorem lorem lorem ipsum</p>
+      <div class="highlighted-text-box mb-4">
+        <h3>(Re-)Thinking University-Impact - Socially, Ecologically - in Linz</h3>
+        <h4><a href="https://www.dioezese-linz.at/institution/8228/ueberuns/khjlvorstand201617">KHJ Leadership 2024/25</a></h4>
+        <h5>by ?</h5>
+        <p>2024 Fall Perspective?</p>
+        <p>Group Photo? Logo?</p>
       </div>
 
       <h3 class="text-3xl uppercase mb-4 font-mono text-blue-300 mt-1"><b>->YOUR LOGO<- Here?</b></h3> 
@@ -211,11 +229,17 @@
       </div>
 
       <div class="text-box mb-2 endnotes">
-        <h3>Lorem ipsum</h3>
-        <p>Lorem lorem lorem ipsum</p>
-      </div>
+        <h3>Wow, Thank You For Reading This Far!</h3>
+        <p>You see, we care about this stuff. Are you getting this idea? If yes, we hope to count on your support, start with a simple signature on the petition confirming that you believe in this idea and its transformational power for Linz.</p>
+        <p class="mt-4">For our part, we will continue to publicisze the petition and related efforts, exercising a democrativ soft- counter-power to the politics and business as usual leading to bad decisions like closing the Green Belt (Grüngürtel).</p>
+        <p class="mt-4">Here are some dates we are keeping our eyes on.</p>
+        <!-- Timeline -->
+         <h3 class="text-4xl uppercase mb-4 font-mono text-red-400 mt-10">But again, growing this idea starts with a simple signature.</h3> 
+         
+         <h2 class="text-5xl uppercase font-mono text-red-400 mt-10"><b>Next stop: Linz, PostUni!</b></h2>
 
-      <img src="~/assets/img/linienplan.jpg" alt="From the Collective:Detention Model Makers" class="w-full mb-4" />
+         <img src="~/assets/img/linienplan.jpg" alt="From the Collective:Detention Model Makers" class="w-full mb-0 mt-10" />
+      </div>
 
       <h3 class="text-4xl uppercase mb-4 font-mono text-red-400">
         <i class="smaller-text text-red-400">If you are convinced, we would be honored and grateful if you <b>join us to take action</b>:</i>
