@@ -40,10 +40,15 @@
         <h4 class="text-md text-gray-300">* <b>Current Owner of PostCity</b>. In turn, the Post is majority-owned by <a href="https://oebag.gv.at">OEBAG, Österreichische Beteiligungs AG</a>, legally mandated to make long-term, AT-serving decisions, after all!</h4>
         <h3 class="text-md text-gray-300">If Linz wants to continue to be a creative hub, it's <b>time to put the money where the mouth is</b>.</h3>
 
-          <!-- Call to Action Button -->
-          <button class="cta-button">Get Involved Now</button>
-
-          <!-- Fold-out or pop-up form/phone numbers, etc. -->
+        <!-- Call to Action Button -->
+        <button class="cta-button">Get Involved Now</button>
+        <div class="info-box">
+          <span class="info-symbol">ℹ️</span>
+          <div class="info-text">
+            <h3 class="text-md text-gray-300">This button links to <b><a href="https://www.openpetition.eu/at/content/about_us">openpetition.eu</a> where we host our petition and post latest updates</b>. It is very important to us that you make your support clear there, if you care about this project, thank you! ❤️</h3>
+            <h3 class="text-md text-gray-300">You will need to <a href="https://www.openpetition.eu/at/user/registrieren">create an account if you do not have one</a>.</h3>
+          </div>
+        </div>
 
         <h4 class="text-md text-gray-300 mt-5">When you are ready to support us, you will need to make yourself heard by the right city and other government officials as well as businesspeople running OEBAG and the Post.</h4>
 
@@ -341,7 +346,7 @@ export default {
 
 
 .cta-button {
-  background: linear-gradient(45deg, #ff4d4d, #ff0000); /* Gradient for a glossy look */
+  background: linear-gradient(45deg, #32e0f4, #29b0cc); /* Gradient for a glossy look */
   color: #ffffff;
   padding: 1em 0; /* Vertical padding only */
   font-size: 1.5rem;
@@ -358,7 +363,7 @@ export default {
 }
 
 .cta-button:hover {
-  background: linear-gradient(45deg, #ff3333, #cc0000); /* Darker gradient on hover */
+  background: linear-gradient(45deg, #32e0f4, #2cb4cc); /* Darker gradient on hover */
   transform: translateY(-3px); /* Lift effect on hover */
 }
 
@@ -395,5 +400,36 @@ export default {
 .bg-green {
   background-color: #d0d410;
 }
+
+.info-box {
+  display: flex;
+  align-items: flex-start;
+  background-color: #655c5c; /* Dark gray background */
+  border: 2px solid #ddd; /* Subtle border */
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.info-symbol {
+  font-size: 2rem; /* Size of the info symbol */
+  margin-right: 15px;
+  color: #2596be; /* Optional: Info color (blue) */
+}
+
+.info-text {
+  flex-grow: 1;
+}
+
+.info-box a {
+  color: #2596be; /* Matching color for links */
+  text-decoration: underline;
+}
+
+.info-box a:hover {
+  color: #0077a8; /* Darker blue on hover */
+}
+
 
 </style>
