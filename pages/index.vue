@@ -180,7 +180,7 @@
           class="my-64 h-48 w-48 mx-auto bg-yellow-300 border border-black flex justify-center items-center"
           @step-enter="stepEnterHandlerSticky2"
         >
-          Discipline {{ step.id }}
+          Event {{ step.id }}
         </div>
       </Scrollama>
     </div>
