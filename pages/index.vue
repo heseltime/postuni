@@ -46,9 +46,9 @@
         <div class="con-belt"></div>
       </div>
 
-      <h4 class="text-2xl uppercase mb-4 font-mono text-blue-300">Let's <b>go into</b> PostCity!</h4>
+      <h4 class="text-2xl uppercase mb-4 pt-10 font-mono text-blue-300">Let's <b>go into</b> PostCity!</h4>
 
-      <h3 class="text-3xl uppercase mb-4 font-mono text-blue-300">Why IT-U at PostCity <b>->NOW<-</b>? <b>IN DETAIL</b></h3>
+      <h3 class="text-3xl uppercase mb-10 pb-10 font-mono text-blue-300">Some Lucky Numbers for PostCity <b>->NOW<-</b>?</h3>
 
       <div
         class="graphic sticky top-0 mt-20 flex items-center justify-center text-8xl"
@@ -70,23 +70,15 @@
         @step-enter="stepEnterHandlerSticky"
 
       >
-      <div class="hover-container">
-          <img
-            :src="step.image"
-            alt="Main Image"
-            class="main-image"
-          />
-          <div class="svg-glove">
-            <!-- SVG of a glove/hand -->
-            <svg viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg" class="glove-shape">
-              <!-- You can use a path or a shape resembling a glove or hand -->
-              <path d="M10 10 L30 10 C40 10, 50 20, 50 30 C50 40, 40 50, 30 50 L10 50 Z" fill="#333" />
-            </svg>
-          </div>
-          <div class="hover-box">
-            <span class="text-9xl text-gray-600">{{ step.id }}</span>
-            <p class="hover-description">{{ step.text }}</p>
-          </div>
+        <div class="hover-container">
+            <img :src="step.image" alt="Main Image" class="main-image" />
+            <div class="image-glove">
+                <img src="~/assets/img/hand-1.png" alt="Hand Pushing" class="glove-image" />
+            </div>
+            <div class="hover-box">
+                <span class="text-9xl text-gray-600">{{ step.id }}</span>
+                <p class="hover-description">{{ step.text }}</p>
+            </div>
         </div>
       </div>
 
@@ -94,10 +86,10 @@
 
     </div>
 
-    <h3 class="text-3xl uppercase mb-4 font-mono text-blue-300 mt-2">So Why <b>->ARE<-</b> Decision Makers Like This About It?</h3>
+    <h3 class="text-3xl uppercase mb-4 font-mono text-blue-300 mt-2">So Why <b>->ARE<-</b> Decision Makers Like <b>This</b> About It?</h3>
 
     <!-- Ref. Once-In-A-Lifetime Oppt: Shrugging Guy Yellow Here, Also Pick Up Gloves Style -->
-    <img src="~/assets/img/shrug.gif" alt="PostCity City Model" class="" />
+    <img src="~/assets/img/shrug.gif" alt="PostCity City Model" class="" width="200px" />
 
     <h4>Where many people <b>across party-lines</b> are starting to see an opportunity, it sounds like our politician-leaders see expensive private real estate development and a shopping mall thrown in, leading Linz down the road of <b>not just the ordinary and bland, but laying the groundwork for an undesirable urban social development in the century to come</b>.</h4>
 
@@ -272,9 +264,9 @@ export default {
       imageReplacement: require('../assets/img/postUNI@daniel_schöngruber_2.png'),
       stepsSticky: [
         { id: '75', text: 'students founded the university here', image: require('../assets/img/spectacular.png') }, 
-        { id: '7000+', text: 'signatures against closing the Green Belt' }, 
-        { id: '7', text: 'Mayoral Candidates in 2024/25' }, 
-        { id: '1', text: 'university/once-in-a-lifetime' }
+        { id: '4000+', text: 'signatures against closing the Green Belt', image: require('../assets/img/no-field.png') }, 
+        { id: '7', text: 'Mayoral Candidates in 2024/25', image: require('../assets/img/mhwbg.png') }, 
+        { id: '1', text: 'Owner: NOW Open to Negotiation', image: require('../assets/img/post-delivers.png') }
       ],
       stepsSticky2: [{ id: 'I' }, { id: 'II' }, { id: 'III' }, { id: 'IV' }],
       activeStepId: null,
@@ -731,25 +723,26 @@ export default {
   left: 0; /* Moves the arm in with the hover box */
 }
 
-.svg-glove {
+.image-glove {
   position: absolute;
   top: 50%;
-  left: -100%;
+  left: -100%; /* Start outside the container */
   transform: translateY(-50%);
-  width: 50px; /* Adjust based on your SVG size */
-  height: 50px;
-  transition: left 0.5s ease-in-out; /* Same transition as the hover box */
-}
-
-.hover-container:hover .svg-glove {
-  left: 0; /* Move into view when hovered */
-}
-
-.glove-shape {
-  width: 100%; /* Adjust the width */
+  width: 80px; 
   height: auto;
-  fill: #555; /* Industrial glove color */
+  transition: left 0.5s ease-in-out; /* Matches the hover-box transition */
 }
+
+.hover-container:hover .image-glove {
+  left: 0; /* Move the image-glove into view */
+}
+
+.glove-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Ensure the glove image scales properly */
+}
+
 
 .neon-flicker {
   color: #00ffcc; /* Neon color */
