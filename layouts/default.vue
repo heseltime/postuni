@@ -10,17 +10,17 @@
         <h2 class="text-5xl uppercase mb-4 font-mono pt-30">PostCity x IT-U (postuni)</h2>
 
         <h3 class="text-4xl uppercase mb-4 font-mono text-red-400 pt-12">
-          While the initial drive came top-down from politics,
-          <b class="highlight-background">the people are shaping the project to make it actually work for the city</b>
+          Linz, You Saved the Grüngürtel,
+          <b class="highlight-background">Now Let's Make PostCity Work for All of Us Too</b>
         </h3>
 
 
         <div class="bg-gray-500 text-gray-100 text-center">
           <div class="w-full background-banner flashy-banner-text">
             
-            <h3 class="text-4xl uppercase mb-4 font-mono pt-12">Time for Linz to be Heard, Again!</h3>
+            <h3 class="text-4xl uppercase mb-4 font-mono pt-12">IT:U @ PostCity, Whatever You Call IT:</h3>
 
-            <h2 class="text-5xl uppercase mb-4 font-mono pt-30">Let's move the university to PostCity</h2>
+            <h2 class="text-5xl uppercase mb-4 font-mono pt-30">PostUni Now!</h2>
 
           </div>
         </div>
@@ -38,7 +38,7 @@
         </h3>
         <h3 class="text-md text-gray-300">Don't put short-term, boring business-as-usual before a truly transformative project opportunity, with, yes, business value as well, dear officials, business representatives, and <b>Österreichische Post AG, "the Post"</b>* -</h3>
         <h4 class="text-md text-gray-300">* <b>Current Owner of PostCity</b>. In turn, the Post is majority-owned by <a href="https://oebag.gv.at">OEBAG, Österreichische Beteiligungs AG</a>, legally mandated to make long-term, AT-serving decisions, after all!</h4>
-        <h3 class="text-md text-gray-300">If Linz wants to continue to be a creative hub, it's <b>time to put the money where the mouth is</b>.</h3>
+        <h3 class="text-md text-gray-300">If Linz wants to continue to be a creative hub, it's <b>time to put our money where our mouth is</b>! This requires <b>YOU</b>, as a concerned citizen of Linz, to make youself heard!</h3>
 
         <!-- Call to Action Button -->
         <a href="https://www.openpetition.eu/at/petition/online/retten-wir-den-linzer-gruenguertel" class="cta-button" target="_blank" rel="noopener noreferrer">
@@ -52,13 +52,13 @@
           </div>
         </div>
 
-        <h4 class="text-md text-gray-300 mt-5">When you are ready to support us, you will need to make yourself heard by the right city and other government officials as well as businesspeople running OEBAG and the Post.</h4>
+        <h4 class="text-md text-gray-300 mt-5">When you are ready to show your support, you will need to make yourself heard by the right city and other government officials as well as businesspeople running OEBAG and the Post. <b>But the most important thing is to sign the formal petition first</b>, that way we have a visible basis for our collective effort.</h4>
 
         <img src="~/assets/img/post-city-post-uni-no-bg.png" alt="PostUni Logo" width="200" class="mb-0 mt-2" />
 
         <h3 class="text-4xl uppercase mb-4 font-mono text-white-400 pt-12">**Who are we?</h3>
 
-        <h4>We are an unlikely grouping iterested in a sutainable, smart, relevant and promising development of the university sector in Linz that still goes together with economic prowess. <b>But above all, we are Linzer.</b> And we are students too.</h4>
+        <h4>We are an unlikely grouping iterested in a sutainable, smart, relevant and promising development of the university sector in Linz that still goes together with economic prowess. <b>But above all, we are Linzer.</b> And we are students!</h4>
 
       </div>
 
