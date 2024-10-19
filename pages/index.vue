@@ -197,7 +197,7 @@
     <div class="text-box mb-4">
       <h3>Make It <span class="color-yellow">Yellow!</span></h3>
       <p class="color-black">You can take the yellow in the following designs to be the manifold spaces for creative transformation, aligned with the new Interdisciplinary Transformation University's mandate.</p> 
-      
+      <h3 class="text-3xl uppercase mb-4 font-mono text-blue-300 mt-2">Yes, <b>->don't<-</b> take this literally.</h3>
       <p class="mt-2">The university itself does not need to be yellow, we would agree.</p>
     </div>
 

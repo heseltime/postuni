@@ -113,9 +113,9 @@
         <h3>Individual Voices from The Founding Lab</h3>
         <h4><a href="https://postuni.at/en/">Book Link Perhaps</a></h4>
         <h5>by Open!</h5>
-        <p>Voice 1: TODO!</p>
+        <p>Voice 1: TODO! JACK KONTAKT FOUNDING LAB MEMBERS</p>
         <h5>by Open!</h5>
-        <p>Voice 2: TODO!</p>
+        <p>Voice 2: TODO! JACK KONTAKT FOUNDING LAB MEMBERS</p>
       </div>
 
       <!-- group photo and book maybe -->
@@ -161,7 +161,7 @@
         <h3>Starting a University: 2023 Ars Electronica Festival Recap and the 2024/25 Perspective</h3>
         <h4><a href="https://postuni.at/en/">Book Link Perhaps</a></h4>
         <h5>by Open! Quebi?</h5>
-        <p>TODO!</p>
+        <p>TODO! JACK KONTAKT FOUNDING LAB ODER EIGENER TEXT</p>
         <p>Group Photo?</p>
       </div>
 
@@ -180,9 +180,7 @@
         <h3>(Re-)Thinking University-Impact - Socially, Ecologically - in Linz</h3>
         <h4><a href="https://www.dioezese-linz.at/institution/8228/ueberuns/khjlvorstand201617">KHJ Leadership 2024/25</a></h4>
         <h5>by Jack Heseltine</h5>
-        <p>Underused facilities and institutions in Linz like the postal distribution center PostCity, but also the slaughterhouse, or the Nestlé site are ready for new, versatile uses, which could be implemented in a climate- and environmentally-friendly manner within existing structures. Universities, along with their buildings and spaces, are essential, identity-shaping institutions within cities. Through students, educators, and infrastructure, they have the power to activate entire neighborhoods socially and economically as places to live and work. Over 26,000 people study in Linz, with around 3,000 more expected to join IT:U.
-          To fulfill the societal mission of a university, its impact should not dissipate on the outskirts of the city but rather be integrated into the urban fabric, enhancing the city’s social and economic potential.</p>
-        <p>Group Photo? Logo?</p>
+        <p>TODO JACK (TEXT)</p>
       </div>
 
       </div>
@@ -205,7 +203,7 @@
         <h3>(Re-)Thinking University-Impact - Socially, Ecologically - in Linz</h3>
         <h4><a href="https://www.dioezese-linz.at/institution/8228/ueberuns/khjlvorstand201617">KHJ Leadership 2024/25</a></h4>
         <h5>by ?</h5>
-        <p>2024 Fall Perspective?</p>
+        <p>2024 Fall Perspective? TODO JACK KONTAKT GRÜNGÜRTEL FÜR TEXT</p>
         <p>Group Photo? Logo?</p>
       </div>
 
