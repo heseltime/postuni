@@ -99,7 +99,7 @@
     <!-- Ref. Once-In-A-Lifetime Oppt: Shrugging Guy Yellow Here, Also Pick Up Gloves Style -->
     <img src="~/assets/img/shrug.gif" alt="PostCity City Model" class="" />
 
-    <h4>Where many people <b>across party-lines</b> are starting to see an opportunity, it sound like our politician-leaders see expensive private real estate development and a shopping mall thrown in, leading Linz down the road of <b>not just the ordinary and bland, but laying the groundwork for an undesirable urban social development in the century to come</b>.</h4>
+    <h4>Where many people <b>across party-lines</b> are starting to see an opportunity, it sounds like our politician-leaders see expensive private real estate development and a shopping mall thrown in, leading Linz down the road of <b>not just the ordinary and bland, but laying the groundwork for an undesirable urban social development in the century to come</b>.</h4>
 
     <h3 class="text-4xl uppercase mb-4 font-mono text-red-400">
       <i class="smaller-text text-red-400">We are convinced: <b>Linz can do better than business-as-usual here</b>.</i>
