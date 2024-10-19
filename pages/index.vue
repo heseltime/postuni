@@ -9,7 +9,7 @@
         <img src="~/assets/img/plants-banner.png" alt="PostCity Banner" />	
       </div>
 
-      <h3 class="text-4xl uppercase mb-4 font-mono text-white-400 pt-12">Transforming Infrastructure</h3>
+      <h3 class="text-4xl uppercase mb-4 font-mono text-white-400">Transforming Infrastructure</h3>
 
       <h4 class="text-md text-gray-300 mt-0 mb-5">This website tells a story, in pictures, of a spectacular piece of <b>old infrastructure</b>, and <b>what it could become for the new university in Linz</b>.</h4>
       
@@ -23,22 +23,21 @@
       </div>
       
       <div class="highlighted-text-box-blue mb-4">
-        <h3>What is the Interdisciplinary Transformation University Austria (IT:U)?</h3>
-        <p>
-          The <a href="https://it-u.at/en/" target="_blank">Interdisciplinary Transformation University Austria (IT:U)</a> is Austria’s first interdisciplinary university, located in Linz, and dedicated to merging technology, hands-on learning, and global problem-solving. IT:U offers a project-based, inclusive approach to education, where students from diverse backgrounds apply technologies like AI and robotics to tackle real-world challenges.
-        </p>
-        <p>
-          IT:U aims to drive digital transformation, advancing science, economy, and society on a global scale. With the goal of fostering lifelong learning and sustainable development, the university empowers students to become leaders in digital and social transformations, addressing pressing issues such as climate change and public health.
-        </p>
-        <p>
-          Guided by three core pillars—Digital Transformation, New Learning, and Interdisciplinary Collaboration—IT:U teaches skills essential for addressing complex challenges through computational methods. The university is committed to creating an inspiring, inclusive environment that encourages students, researchers, and local businesses to collaborate, forming a robust ecosystem of innovation.
-        </p>
-        <p>
-          As an institution centered on interdisciplinary research, IT:U is determined to demonstrate that excellent science can be transformed into innovative products, services, and social advancements. With its unique mission, IT:U aims to empower students, scientists, and regional networks to drive transformative impact across Linz and beyond.
-        </p>
+          <img src="~/assets/img/itu-spaceship.webp" alt="IT:U" width="120" style="float: right;"/>
+          <h3>What is the Interdisciplinary Transformation University Austria?</h3>
+          <p>
+              The <a href="https://it-u.at/en/" target="_blank">Interdisciplinary Transformation University Austria (IT:U)</a> is Austria’s first interdisciplinary university, located in Linz, and dedicated to merging technology, hands-on learning, and global problem-solving. IT:U offers a project-based, inclusive approach to education, where students from diverse backgrounds apply technologies like AI and robotics to tackle real-world challenges.
+          </p>
+          <p>
+              In some ways, because it was launched by politicians at both the state and federal levels, <b>it is like an alien space ship that has come to land in Linz: this is an opportunity</b>, for sure, and we are talking friendly aliens 👽 we think at least ❤️.
+          </p>
+          <h3 class="text-4xl uppercase mb-4 font-mono text-white-400 pt-12">From a City and Citizen's Perspective, so much Seems Clear: IT:U Needs to Be In the City-Center to Fulfill Its Mandate</h3>
+          <p>
+              As an institution centered on interdisciplinary research, <b>IT:U is determined to demonstrate that excellent science can be transformed into innovative products, services, and social advancements</b>. With its unique mission, IT:U <b>aims to empower students, scientists, and regional networks to drive transformative impact across Linz and beyond</b>.
+          </p>
 
-        <h3 class="text-4xl uppercase mb-4 font-mono text-white-400 pt-12">The University Is Called IT:U</h3>
-        <h2 class="glossy-bold-black-h2">IT:U x PostCity Is PostUni</h2>
+          <h3 class="text-4xl uppercase mb-4 font-mono text-white-400 pt-12">The University Is Called IT:U</h3>
+          <h2 class="glossy-bold-black-h2">IT:U x PostCity Is PostUni</h2>
       </div>
 
       <div class="full">
@@ -96,6 +95,27 @@
     <div class="full">
       <img src="~/assets/img/RoboticsTopic_sonia_litwin_ccby.png" alt="Orange Wall" class="" />	
       <div class="con-belt"></div>
+    </div>
+
+    <div class="highlighted-text-box-yellow mb-4">
+        <h3>What Is Special About PostCity?</h3>
+        <h4>See Also: <a href="https://ars.electronica.art/aeblog/en/2023/04/20/once-again-in-postcity/">Ars Electronica Blog Article "Once Again In PostCity"</a></h4>
+        <h5>by Katia Kreuzhuber</h5>
+        <p>
+          <i>With 80,000 square meters usable space spread over several levels, a 4,000-meter long parcel distribution facility, a storage unit for 10,000 packages, an entire battery of 12-meter high spiral chutes, and a rail track hall that is around 240 meters long made for both incoming and outgoing railways, the post distribution center that was abandoned in 2014 offers almost limitless opportunities for artistic stagings by Ars Electronica.</i>
+        </p>
+        <h3 class="text-3xl uppercase mb-4 font-mono text-blue-300">PostCity Is Just <b>->AN INSPIRING PLACE<-</b>: <b>Most Visitors to the Ars Electronica Festivals 2023 and 2024 Agree</b></h3>
+        <!-- Embedded YouTube Video that fills the box with a sensible max width -->
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; max-width: 100%; overflow: hidden;" class="mt-3">
+            <iframe 
+                src="https://www.youtube.com/embed/HmN03TQDCQo?start=14" 
+                title="YouTube video player" 
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
     </div>
 
     <div class="header-box">
@@ -327,7 +347,7 @@ export default {
 
 
 .banner {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .intro {
@@ -426,6 +446,51 @@ export default {
 .highlighted-text-box a:hover {
   color: #d46900; /* Darker orange on hover */
   border-color: #d46900; /* Matches hover color */
+}
+
+.highlighted-text-box-yellow {
+  background-color: #fff9db; /* Light yellow background */
+  border: 2px solid #ffcc00; /* Yellow border for emphasis */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.highlighted-text-box-yellow h3 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #ffcc00;
+  text-align: left;
+}
+
+.highlighted-text-box-yellow h4, .highlighted-text-box-yellow h5 {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #333; /* Dark text color for contrast */
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.highlighted-text-box-yellow p {
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.highlighted-text-box-yellow a {
+  color: #ffcc00; /* Matching yellow color */
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid #ffcc00; /* Adds an underline effect */
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.highlighted-text-box-yellow a:hover {
+  color: #e6b800; /* Darker yellow on hover */
+  border-color: #e6b800; /* Matches hover color */
 }
 
 .highlighted-text-box-blue {
