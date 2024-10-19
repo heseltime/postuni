@@ -89,6 +89,7 @@
       <h5>by Lisa Ackerl, Daniel Schöngruber, Marco Thaller</h5>
       <p>Underused facilities and institutions in Linz like the postal distribution center PostCity, but also the slaughterhouse, or the Nestlé site are ready for new, versatile uses, which could be implemented in a climate- and environmentally-friendly manner within existing structures. Universities, along with their buildings and spaces, are essential, identity-shaping institutions within cities. Through students, educators, and infrastructure, they have the power to activate entire neighborhoods socially and economically as places to live and work. Over 26,000 people study in Linz, with around 3,000 more expected to join IT:U.
         To fulfill the societal mission of a university, its impact should not dissipate on the outskirts of the city but rather be integrated into the urban fabric, enhancing the city’s social and economic potential.</p>
+      <img src="~/assets/img/city-model-no-bg.png" alt="PostCity City Model" class="" />
     </div>
 
 
@@ -104,8 +105,8 @@
         <p>
           <i>With 80,000 square meters usable space spread over several levels, a 4,000-meter long parcel distribution facility, a storage unit for 10,000 packages, an entire battery of 12-meter high spiral chutes, and a rail track hall that is around 240 meters long made for both incoming and outgoing railways, the post distribution center that was abandoned in 2014 offers almost limitless opportunities for artistic stagings by Ars Electronica.</i>
         </p>
-        <h3 class="text-3xl uppercase mb-4 font-mono text-blue-300">PostCity Is Just <b>->AN INSPIRING PLACE<-</b>: <b>Most Visitors to the Ars Electronica Festivals 2023 and 2024 Agree</b></h3>
-        <!-- Embedded YouTube Video that fills the box with a sensible max width -->
+        <h3 class="text-3xl uppercase mb-4 font-mono text-blue-300 mt-2">PostCity Is Just <b>->AN INSPIRING PLACE<-</b>: <b>Most Visitors to the Ars Electronica Festivals 2023 and 2024 Agree</b></h3>
+        <p><b>Endless open spaces, magical affordances like the postal slides, labarynthine corridors invite to play and to explore</b>: people do fall in love with this space itself and the fit for an insitution IT:U aims to be is apparent. More so, <b>we believe IT:U needs a space like PostCity to achieve its mission</b>.</p>
         <div style="position: relative; padding-bottom: 56.25%; height: 0; max-width: 100%; overflow: hidden;" class="mt-3">
             <iframe 
                 src="https://www.youtube.com/embed/HmN03TQDCQo?start=14" 
@@ -117,6 +118,8 @@
             </iframe>
         </div>
     </div>
+
+    <h4 class="text-md text-gray-300 mt-0 mb-5">So now in <b>2024</b>, going into 2025, let us review ...</h4>
 
     <div class="header-box">
       <div class="info header">

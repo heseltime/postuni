@@ -114,8 +114,8 @@
         <p>Lorem lorem lorem ipsum</p>
       </div> 
 
-      <img src="~/assets/img/Städtebaumodell.jpeg" alt="From the Collective:Detention Model Makers" class="w-full mb-4" />
-
+      <!-- group photo and book maybe -->
+       
       </div>
     </div>
 
