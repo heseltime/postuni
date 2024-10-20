@@ -1,26 +1,28 @@
 <template>
   <div>
-    <!-- Layout Wrapper -->
-    <!-- ... and Header -->
-    <div class="bg-gray-500 text-gray-100 text-center pb-2">
-      <div class="w-full background-banner">
+    <div :class="{'bg-white text-gray-900 pt-0 mt-0 pb-0': !isDarkMode, 'bg-gray-500 text-gray-100 pt-0 mt-0 pb-0': isDarkMode}" class="text-center pb-2">
+      <div class="w-full flashy-banner-text pt-0 mt-0">
+
+        <div class="logo-container">
+          <img src="~/assets/img/post-uni-now-logo-3x.png" alt="Post Uni Now" class="logo-title" />
+        </div>
         
-        <h3 class="text-4xl uppercase mb-4 font-mono text-white-400 pt-12">Let's get this right, Now, and for Linz</h3>
 
-        <h2 class="text-5xl uppercase mb-4 font-mono pt-30">PostCity x IT-U (postuni)</h2>
+        <h2 class="text-5xl uppercase mb-0 font-mono pt-5">PostCity x IT-U (postuni)</h2>
 
-        <h3 class="text-4xl uppercase mb-4 font-mono text-red-400 pt-12">
-          Linz, You Saved the Grüngürtel,
-          <b class="highlight-background">Now Let's Make PostCity Work for All of Us Too</b>
-        </h3>
+        <h3 class="text-3xl uppercase mb-4 font-mono text-red-300 pt-2">Linz, You Saved the Grüngürtel,</h3>
+
+        <h3 class="text-4xl uppercase mb-4 font-mono text-red-300 pt-2">
+          <b class="highlight-background">NOW Let's Make PostCity Work for All of Us</b>
+        </h3> 
 
 
         <div class="bg-gray-500 text-gray-100 text-center">
-          <div class="w-full background-banner flashy-banner-text">
+          <div class="w-full background-banner">
             
-            <h3 class="text-4xl uppercase mb-4 font-mono pt-12">IT:U @ PostCity, Whatever You Call IT:</h3>
+            <!--<h3 class="text-4xl uppercase mb-4 font-mono pt-12">IT:U @ PostCity, Whatever You Call IT:</h3>
 
-            <h2 class="text-5xl uppercase mb-4 font-mono pt-30">PostUni Now!</h2>
+            <h2 class="text-5xl uppercase mb-4 font-mono pt-30">PostUni Now!</h2>-->
 
           </div>
         </div>
@@ -29,16 +31,15 @@
 
       <div class="max-w-3xl w-full mx-auto px-8 pt-10">
         <div class="highlight-text-intro pb-64 text-center">
-        <h3 class="text-4xl uppercase mb-4 font-mono text-white-400 pt-12">What is this about and why now?</h3>
+        <h3 class="text-4xl uppercase mb-4 font-mono text-white-400 pt-12">What is this about/why now?</h3>
         <h5 class="text-md text-white-400">
-          Now that the city <a href="https://www.nachrichten.at/politik/landespolitik/stadt-linz-zieht-bei-der-umwidmung-fuer-die-itu-die-notbremse;art383,3989606?utm_source=browser&utm_medium=push-notification&utm_campaign=cleverpush-1728293690" target="_blank">has backtracked</a> on the planned Dornach "Grüngürtel" extension, here is another chance for the PostCity location, the place where the university began.
+          Now that the city <a href="https://www.nachrichten.at/politik/landespolitik/stadt-linz-zieht-bei-der-umwidmung-fuer-die-itu-die-notbremse;art383,3989606?utm_source=browser&utm_medium=push-notification&utm_campaign=cleverpush-1728293690" target="_blank">has backtracked</a> on the planned Dornach "Grüngürtel" extension, here is <b>another chance for the PostCity location, the place where the university began</b>.
         </h5>
         <h3 class="text-4xl uppercase mb-4 font-mono text-red-400 pt-12">
-          <i class="smaller-text text-red-400">Thank you to those officials involved, for listening to the people, and stopping the ecologically disastrous old plan in October 2024: <b>this initiative aims to continue the colaborative dialog</b>, for Linz, its people, and the tech scene too - since we all stand to profit from doing this long-term project right</i>.
+          <i class="smaller-text text-red-400"><b>Thank you</b> to those officials involved, for listening to the people, and stopping the ecologically disastrous old plan in October 2024.</i></h3> 
+        <h3 class="text-4xl uppercase mb-4 font-mono text-red-400 pt-12">
+          <b>this initiative aims to continue the colaborative dialog</b> since we all stand to profit from doing this long-term project right</i>.
         </h3>
-        <h3 class="text-md text-gray-300">Don't put short-term, boring business-as-usual before a truly transformative project opportunity, with, yes, business value as well, dear officials, business representatives, and <b>Österreichische Post AG, "the Post"</b>* -</h3>
-        <h4 class="text-md text-gray-300">* <b>Current Owner of PostCity</b>. In turn, the Post is majority-owned by <a href="https://oebag.gv.at">OEBAG, Österreichische Beteiligungs AG</a>, legally mandated to make long-term, AT-serving decisions, after all!</h4>
-        <h3 class="text-md text-gray-300">If Linz wants to continue to be a creative hub, it's <b>time to put our money where our mouth is</b>! This requires <b>YOU</b>, as a concerned citizen of Linz, to make youself heard!</h3>
 
         <!-- Call to Action Button -->
         <a href="https://www.openpetition.eu/at/petition/online/retten-wir-den-linzer-gruenguertel" class="cta-button" target="_blank" rel="noopener noreferrer">
@@ -56,12 +57,35 @@
 
         <img src="~/assets/img/post-city-post-uni-no-bg.png" alt="PostUni Logo" width="200" class="mb-0 mt-2" />
 
-        <h3 class="text-4xl uppercase mb-4 font-mono text-white-400 pt-12">**Who are we?</h3>
+        <h3 class="text-4xl uppercase mb-4 font-mono text-white-400 pt-12">Who are we?</h3>
 
         <h4>We are an unlikely grouping iterested in a sutainable, smart, relevant and promising development of the university sector in Linz that still goes together with economic prowess. <b>But above all, we are Linzer.</b> And we are students!</h4>
 
-      </div>
+        <h4>Read on for more background.
+        </h4>
 
+        <!-- Box to hold toggle switches -->
+        <div class="max-w-3xl w-full mx-auto px-8 pt-10">
+          <h4><b>Options</b>:</h4>
+          <!-- Dark Mode Toggle Switch -->
+          <div class="toggle-container">
+            <label class="toggle-label">
+              <input type="checkbox" v-model="isDarkMode" class="toggle-input">
+              <span class="toggle-slider"></span>
+            </label>
+            <span>Switch to Dark Mode</span>
+          </div>
+
+          <!-- Animations Toggle Switch -->
+          <div class="toggle-container">
+            <label class="toggle-label">
+              <input type="checkbox" v-model="isAnimationsEnabled" class="toggle-input">
+              <span class="toggle-slider"></span>
+            </label>
+            <span>Enable Animations</span>
+          </div>
+        </div> 
+      </div> 
 
       <Nuxt /> <!-- Main App/Content: Pagination Could Grab This -->
 
@@ -96,7 +120,7 @@
     </div>
 
     <!-- A Message from the Found Lab -->
-    <div class="bg-yellow text-gray-100 text-center pb-2">
+    <!--<div class="bg-yellow text-gray-100 text-center pb-2">
       <div class="max-w-3xl w-full mx-auto px-8 pt-10">
       <h3 class="text-3xl uppercase mb-4 font-mono text-blue-300 mt-5">Now a <b>->MESSAGE<-</b> from <b>IT:U'S FIRST STUDENTS</b></h3>  
 
@@ -118,10 +142,8 @@
         <p>Voice 2: TODO! JACK KONTAKT FOUNDING LAB MEMBERS</p>
       </div>
 
-      <!-- group photo and book maybe -->
-
       </div>
-    </div>
+    </div>-->
 
     <!-- About Us Part -->
     <div class="bg-blue text-gray-100 text-center pb-2">
@@ -141,8 +163,7 @@
         <h3>What is the collective about?</h3>
         <h4><a href="https://postuni.at/en/">Kunstuni Link Perhaps?</a></h4>
         <h5>by Lisa Ackerl, Daniel Schöngruber, Marco Thaller</h5>
-        <p>Underused facilities and institutions in Linz like the postal distribution center PostCity, but also the slaughterhouse, or the Nestlé site are ready for new, versatile uses, which could be implemented in a climate- and environmentally-friendly manner within existing structures. Universities, along with their buildings and spaces, are essential, identity-shaping institutions within cities. Through students, educators, and infrastructure, they have the power to activate entire neighborhoods socially and economically as places to live and work. Over 26,000 people study in Linz, with around 3,000 more expected to join IT:U.
-          To fulfill the societal mission of a university, its impact should not dissipate on the outskirts of the city but rather be integrated into the urban fabric, enhancing the city’s social and economic potential.</p>
+        <p>TODO Collective:Detention</p>
         <p>Group Photo?</p>
       </div>
 
@@ -210,7 +231,12 @@
       </div>
 
       <h3 class="text-3xl uppercase mb-4 font-mono text-blue-300 mt-1"><b>->YOUR LOGO<- Here?</b></h3> 
-      <h3 class="text-md text-white mt-4">If you would like to appear as a supporter on this website, please write to: <b>contact@postuni.at</b></h3>
+      <h3 class="text-md text-white mt-3">If you would like to appear as a supporter on this website, please write to: <b>contact@postuni.at</b></h3>
+
+      <h3 class="text-3xl uppercase mb-4 font-mono text-blue-300 mt-4"><b>->SHARING IS CARING<-!</b></h3> 
+      <h3 class="text-md text-white mt-3">Would you like to <b>bring attention to this initative</b> on your channels?</h3>
+
+      <h3 class="text-md text-white mt-4"><a href="">Copy the still image</a> or this code for the animated version:</h3>
 
       </div>
     </div>
@@ -229,10 +255,10 @@
       </div>
 
       <div class="text-box mb-2 endnotes">
-        <h3>Wow, Thank You For Reading This Far!</h3>
-        <p>You see, we care about this stuff. Are you getting this idea? If yes, we hope to count on your support, start with a simple signature on the petition confirming that you believe in this idea and its transformational power for Linz.</p>
-        <p class="mt-4">For our part, we will continue to publicisze the petition and related efforts, exercising a democrativ soft- counter-power to the politics and business as usual leading to bad decisions like closing the Green Belt (Grüngürtel).</p>
-        <p class="mt-4">Here are some dates we are keeping our eyes on.</p>
+        <h3>Thank You for Reading This Far!</h3>
+        <p>You see, we care about this stuff. Are you getting this idea? If yes, <b>we hope to count on your support: start with a simple signature on the petition</b> confirming that you believe in this idea and its transformational power for Linz.</p>
+        <p class="mt-4">For our part, <b>we will continue to publicize the petition and related efforts, exercising a democratic, soft counter-power to the politics- and business-as-usual leading to bad decisions like closing the Green Belt (Grüngürtel)</b>.</p>
+        <p class="mt-4">Here are <b>some key dates</b> we are keeping our eyes on.</p>
         <!-- Timeline -->
          <h3 class="text-4xl uppercase mb-4 font-mono text-red-400 mt-10">But again, growing this idea starts with a simple signature.</h3> 
          
@@ -270,10 +296,10 @@
 
     </div>
 
-    <div class="bg-white text-gray-100 text-center pb-2">
+    <div class="bg-white-footer text-gray-100 text-center pb-2">
       <div class="max-w-3xl w-full mx-auto px-8 pt-2 flex justify-between items-center">
         <!-- Logo aligned to the left -->
-        <div class="logo-container">
+        <div class="logo-container-2  ">
           <img src="~/assets/img/postuni-old-logo.jpg" alt="Logo Original Postuni" width="100" class="logo-left">
         </div>
 
@@ -295,16 +321,18 @@
 export default {
   data () {
     return {
-      //pages: ['/', 'Basic', 'Progress', 'StickyGraphic1', 'StickyGraphic2'],
-      //triggerTop: 0,
-      //offset: 0.6,
-    }
+      isDarkMode: false, // Default is light mode
+      isAnimationsEnabled: true,   // State to toggle animations
+    };
   },
   mounted () {
     window.addEventListener('resize', this.handleResize)
     this.handleResize()
   },
   methods: {
+    toggleDarkMode() {
+      this.isDarkMode = !this.isDarkMode;
+    },
     handleResize () {
       this.triggerTop = this.offset * window.innerHeight
     }
@@ -313,6 +341,49 @@ export default {
 </script>
 
 <style>
+body {
+  min-height: 100vh;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  height: 200px;           /* Adjust height to create enough space */
+}
+
+.logo-title {
+  width: 200px;             /* Set the width of the image */
+  display: block;           /* Ensure the image is treated as a block-level element */
+  margin: 0 auto;           /* Center the image horizontally */
+}
+
+.background-banner {
+  background-image: url('@/assets/img/postuni.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+  width: 100vw; /* Ensures the background covers the full viewport width */
+  position: relative; /* Set to relative */
+  overflow: hidden;
+  animation: zoomEffect 30s infinite alternate; /* Slower animation */
+  z-index: 0; /* Ensure the background is behind */
+}
+
+/* Zoom effect keyframes (horizontal only) */
+@keyframes zoomEffect {
+  0% {
+    transform: scaleX(1); /* Initial size */
+  }
+  100% {
+    transform: scaleX(1.1); /* Zoom in horizontally only */
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
 .main-link {
   font-size: 2em;
 }
@@ -322,21 +393,16 @@ export default {
   text-decoration: none;
 }
 
-.background-banner {
-  background-image: url('@/assets/img/postuni.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 600px;
-}
-
 .highlight-text-intro {
   background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark overlay */
-  padding: 3em 2em; /* Extra padding for vertical spacing */
+  padding: 3em 2em;
   border-radius: 8px;
   max-width: 800px;
   margin: 0 auto;
   color: #e0e6ed;
-  text-align: left; /* Align text to the left */
+  text-align: left;
+  position: relative;
+  z-index: 10; /* Ensure the text is in front of the background */
 }
 
 .highlight-text-intro h3 {
@@ -370,10 +436,10 @@ export default {
 
 .flashy-banner-text {
   text-align: center;
-  padding: 3em 1em;
   background: linear-gradient(135deg, #ff6b6b, #ffd93d, #1dd3b0, #0078d7); /* Gradient background */
   background-size: 300% 300%;
   animation: gradientAnimation 8s ease infinite; /* Gradient animation */
+  height: 600px;
 }
 
 .flashy-banner-text h3, .flashy-banner-text h2 {
@@ -389,17 +455,17 @@ export default {
 }
 
 .flashy-banner-text h2 {
-  font-size: 4.5rem;
-  font-weight: 900;
-  margin-bottom: 1em;
-}
+    font-size: 4.5rem;
+    font-weight: 900;
+    margin-bottom: 1em;
+  }
 
-/* Gradient animation */
-@keyframes gradientAnimation {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
+  /* Gradient animation */
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
 
 .highlight-background {
   background-color: rgba(255, 255, 0, 0.5); /* Yellow semi-transparent background */
@@ -516,14 +582,13 @@ export default {
     margin-right: auto;
 }
 
-/* Styling for the footer */
-.bg-white {
+.bg-white-footer {
   background-color: #fff;
   color: #333;
   padding: 1.5em 0;
 }
 
-.logo-container {
+.logo-container-2 {
   flex-shrink: 0; /* Prevents the logo from shrinking */
 }
 
@@ -549,5 +614,72 @@ export default {
 .footer-link:hover {
   color: #0077a8; /* Hover color */
 }
+
+/* Base styles */
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+/* Container for the toggles */
+.toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align to the left */
+  margin-bottom: 1rem;
+}
+
+.toggle-label {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  margin-right: 0.5rem;
+}
+
+.toggle-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+.toggle-input:checked + .toggle-slider {
+  background-color: #2196F3;
+}
+
+.toggle-input:checked + .toggle-slider:before {
+  transform: translateX(24px);
+}
+
+
 
 </style>
