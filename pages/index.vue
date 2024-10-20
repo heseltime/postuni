@@ -259,7 +259,8 @@ export default {
     return {
       steps: [{ id: '1', image: require('../assets/img/postUNI@daniel_schöngruber_1.jpg') },
       { id: '2', image: require('../assets/img/plan_1.png') },
-      { id: '3', image: require('../assets/img/plan_2.png') }
+      { id: '3', image: require('../assets/img/Firefly-2.jpg') },
+      { id: '4', image: require('../assets/img/plan_2.png') }
       ],
       imageReplacement: require('../assets/img/postUNI@daniel_schöngruber_2.png'),
       stepsSticky: [
