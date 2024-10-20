@@ -3,7 +3,7 @@
 
     <div> 
 
-      <div class="con-belt"></div>
+      <div :style="isAnimationsEnabled ? { animation: 'roll 50s infinite linear' } : {}" class="con-belt"></div>
 
       <div class="banner">
         <img src="~/assets/img/plants-banner.png" alt="PostCity Banner" />	
@@ -43,7 +43,7 @@
 
       <div class="full">
         <img src="~/assets/img/orange2_sonia_litwin_ccby.png" alt="Orange Wall" class="" />	
-        <div class="con-belt"></div>
+        <div :style="isAnimationsEnabled ? { animation: 'roll 50s infinite linear' } : {}" class="con-belt"></div>
       </div>
 
       <h4 class="text-2xl uppercase mb-4 pt-10 font-mono text-blue-300">Let's <b>go into</b> PostCity!</h4>
@@ -118,7 +118,7 @@
 
     <div class="full">
       <img src="~/assets/img/RoboticsTopic_sonia_litwin_ccby.png" alt="Orange Wall" class="" />	
-      <div class="con-belt"></div>
+      <div :style="isAnimationsEnabled ? { animation: 'roll 50s infinite linear' } : {}" class="con-belt"></div>
     </div>
 
     <div class="highlighted-text-box-yellow mb-4">
@@ -275,6 +275,16 @@ export default {
       activeStepIdSticky2: 'I'
     }
   },
+  props: {
+    isDarkMode: {
+        type: Boolean,
+        default: false,
+    },
+    isAnimationsEnabled: {
+        type: Boolean,
+        default: true,
+    }
+  },
   methods: {
     stepEnterHandler({ element }) {
       const stepId = element.dataset.stepId;
@@ -413,7 +423,6 @@ export default {
     linear-gradient(90deg, currentColor 50%, #0000 0) 0 100%;
   background-size: 10px calc(100% / 3);
   background-repeat: repeat-x;
-  animation: roll 50s infinite linear; /* Slowed down to 2 seconds */
 }
 
 .con-belt-v {
