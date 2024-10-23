@@ -7,6 +7,7 @@
 
       <div class="banner">
         <img src="~/assets/img/plants-banner.png" alt="PostCity Banner" />	
+        <p class="text-gray-300">Photo Credit: Founding Lab member <a href="https://www.sonialitwin.com">@sonialitwin</a></p>
       </div>
 
       <h3 class="text-4xl uppercase mb-4 font-mono text-white-400">Transforming Infrastructure</h3>
@@ -44,6 +45,7 @@
       <div class="full">
         <img src="~/assets/img/orange2_sonia_litwin_ccby.png" alt="Orange Wall" class="" />	
         <div :style="isAnimationsEnabled ? { animation: 'roll 50s infinite linear' } : {}" class="con-belt"></div>
+        <p class="text-gray-300">Photo Credit: Founding Lab member <a href="https://www.sonialitwin.com">@sonialitwin</a></p>
       </div>
 
       <h4 class="text-2xl uppercase mb-4 pt-10 font-mono text-blue-300">Let's <b>go into</b> PostCity!</h4>
@@ -119,6 +121,7 @@
     <div class="full">
       <img src="~/assets/img/RoboticsTopic_sonia_litwin_ccby.png" alt="Orange Wall" class="" />	
       <div :style="isAnimationsEnabled ? { animation: 'roll 50s infinite linear' } : {}" class="con-belt"></div>
+      <p class="text-gray-300">Photo Credit: Founding Lab member <a href="https://www.sonialitwin.com">@sonialitwin</a></p>
     </div>
 
     <div class="highlighted-text-box-yellow mb-4">
