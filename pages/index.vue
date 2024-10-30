@@ -180,6 +180,59 @@
       </Scrollama>
     </div>
 
+    <!-- Political Part (Conditional Display) -->
+    <div v-if="isPoliticsEnabled" class="bg-red text-gray-100 text-center pb-2">
+      <div class="max-w-3xl w-full mx-auto px-8 pt-10">
+        <h3 class="text-3xl uppercase mb-4 font-mono text-blue-300 mt-5"><b>->LET'S TAKE A LOOK AT MAYORAL CANDIDATES<-</b></h3>  
+        <div class="header-box">
+          <div class="info header">
+            <h3>MAYORAL CANDIDATES 2024/25</h3>
+            <div class="arrow-down"></div>
+            <div class="arrow-down"></div>
+            <div class="arrow-down"></div>
+          </div>
+        </div>
+
+        <div class="highlighted-text-box-red mb-4">
+          <h3>The Current Political Options in the Upcoming Mayoral Election for Linz</h3>
+          <h4>The election is an important political moment for Linz with regards to the question of IT:U's location - where we strongly believe Linz is the appropriate location in Upper Austria.</h4>
+
+          <p>We collect this information from official campagin materials and direct inquiry only: <b>we are looking for a firm statement for use of PostCity for the IT:U and related educational facilities</b> instead of alternate projects.</p>
+
+          <h2>Let's Vote for Linz</h2>
+
+          <table class="candidates-table">
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>Candidate</th>
+              <th>Position</th>
+              <th>Supports IT:U @ PostCity (PostUni)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-support="yes">
+              <td><img src="path/to/candidate1.jpg" alt="Candidate 1" class="candidate-img" /></td>
+              <td>Candidate 1</td>
+              <td>A brief description about the candidate’s stance or bio.</td>
+              <td class="support-icon" data-support="yes"></td>
+            </tr>
+            <tr>
+              <td><img src="path/to/candidate2.jpg" alt="Candidate 2" class="candidate-img" /></td>
+              <td>Candidate 2</td>
+              <td>A brief description about the candidate’s stance or bio.</td>
+              <td class="support-icon"></td>
+            </tr>
+            <!-- Add more rows as needed -->
+          </tbody>
+        </table>
+
+        </div>
+
+        <h3 class="text-3xl uppercase mb-4 font-mono text-blue-300 mt-1"><b>We ->DO NOT<- Side with any Candidate Generally</b></h3> 
+      </div>
+    </div>
+
     <div class="header-box-yellow">
       <div class="intro header">
         <h3>THE VISION</h3>
@@ -286,6 +339,10 @@ export default {
     isAnimationsEnabled: {
         type: Boolean,
         default: true,
+    },
+    isPoliticsEnabled: {
+      type: Boolean,
+      default: true,
     }
   },
   methods: {
@@ -574,6 +631,157 @@ export default {
   color: #005a99; /* Darker blue on hover */
   border-color: #005a99; /* Matches hover color */
 }
+
+.highlighted-text-box-red {
+  background-color: #4a1a1a; /* Dark red background */
+  border: 2px solid #b30000; /* Darker red border */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Slightly darker shadow for emphasis */
+  margin: 20px 0;
+  color: #f3f3f3; /* Light text color for contrast */
+}
+
+.highlighted-text-box-red h3 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #ff4d4d; /* Light red for the header */
+  text-align: left;
+}
+
+.highlighted-text-box-red h4, .highlighted-text-box-red h5 {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #f3f3f3; /* Light text color for contrast */
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.highlighted-text-box-red p {
+  font-size: 1.1em;
+  color: #e0e0e0; /* Light gray for paragraph text */
+  line-height: 1.6;
+  text-align: left;
+}
+
+.highlighted-text-box-red a {
+  color: #ff4d4d; /* Light red for links */
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid #ff4d4d;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.highlighted-text-box-red a:hover {
+  color: #e60000; /* Darker red on hover */
+  border-color: #e60000;
+}
+.candidates-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  font-size: 1em;
+  color: #e0e0e0;
+}
+
+.candidates-table th,
+.candidates-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #b30000;
+}
+
+.candidates-table th {
+  background-color: #5c1d1d; /* Dark red header background */
+  color: #f3f3f3; /* Light text color */
+  font-weight: bold;
+}
+
+.candidates-table tbody tr:nth-child(even) {
+  background-color: #4a1a1a; /* Alternate row color */
+}
+
+.candidate-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%; /* Circular image */
+}
+
+/* Style for support icons */
+.support-icon {
+  font-size: 1.8em; /* Increased size for visibility */
+  font-weight: bold;
+  color: #e60000; /* Default red color for X */
+}
+
+.support-icon:before {
+  content: "✗"; /* Default X for no support */
+}
+
+/* Highlight checkmark in green */
+.support-icon[data-support="yes"] {
+  color: #4caf50; /* Green for support */
+}
+
+.support-icon[data-support="yes"]:before {
+  content: "✓"; /* Checkmark icon */
+}
+
+.candidates-table tbody tr[data-support="yes"] {
+  background-color: #e6f4e8; /* Light green background for supporters */
+  color: #2c3e50; /* Dark text color for readability */
+  border-radius: 8px;
+  overflow: hidden; /* Prevents content overflow on rounded corners */
+  margin: 5px;
+}
+
+/* Make the first and last cell in each row rounded */
+.candidates-table tbody tr[data-support="yes"] td:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.candidates-table tbody tr[data-support="yes"] td:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.candidates-table tbody tr:nth-child(even):not([data-support="yes"]) {
+  background-color: #4a1a1a; /* Alternate row color for non-supporters */
+  color: #f3f3f3; /* Light text color for dark background */
+}
+
+.candidates-table th {
+  background-color: #5c1d1d; /* Dark red header background */
+  color: #f3f3f3; /* Light text color */
+  font-weight: bold;
+}
+
+/* Style support icons */
+.support-icon[data-support="yes"] {
+  color: #4caf50; /* Green color for checkmark */
+}
+
+.support-icon:not([data-support="yes"]) {
+  color: #e60000; /* Red color for X */
+}
+
+.highlighted-text-box-red h2 {
+  font-size: 2.5em; /* Larger font size */
+  font-weight: bold;
+  color: #ffcccc; /* Light red color */
+  text-align: center;
+  background: linear-gradient(135deg, #b30000, #ff4d4d); /* Red gradient */
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  margin: 20px 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Adds depth to text */
+}
+
 
 .bg-yellow-version {
   background-color: #fde047;

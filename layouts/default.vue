@@ -68,7 +68,7 @@
                 <input type="checkbox" v-model="isDarkMode" class="toggle-input">
                 <span class="toggle-slider"></span>
               </label>
-              <span>Switch to Dark Mode</span>
+              <span>Switch to <b>Dark Mode</b></span>
             </div>
 
             <!-- Animations Toggle Switch -->
@@ -77,12 +77,21 @@
                 <input type="checkbox" v-model="isAnimationsEnabled" class="toggle-input">
                 <span class="toggle-slider"></span>
               </label>
-              <span>Enable (Horizontal) Animations</span>
+              <span>Enable <b>(Horizontal) Animations</b></span>
+            </div>
+
+            <!-- Politics Toggle Switch -->
+            <div class="toggle-container">
+              <label class="toggle-label">
+                <input type="checkbox" v-model="isPoliticsEnabled" class="toggle-input">
+                <span class="toggle-slider"></span>
+              </label>
+              <span>Show <b>(Political) Information About Mayoral Candidates</b></span>
             </div>
           </div> 
         </div> 
 
-        <Nuxt :isDarkMode="isDarkMode" :isAnimationsEnabled="isAnimationsEnabled" /> <!-- Main App/Content: Pagination Could Grab This -->
+        <Nuxt :isDarkMode="isDarkMode" :isAnimationsEnabled="isAnimationsEnabled" :isPoliticsEnabled="isPoliticsEnabled" /> <!-- Main App/Content: Pagination Could Grab This -->
 
         <!--<div class="pb-64 text-center">
           <NuxtLink v-for="page in pages" :key="page" :to="page" class="underline mx-4">
@@ -210,7 +219,7 @@
       </div>
 
       <!-- Our Supporters Part -->
-      <div class="bg-green text-gray-100 text-center pb-2">
+      <!--<div class="bg-green text-gray-100 text-center pb-2">
         <div class="max-w-3xl w-full mx-auto px-8 pt-10">
         <h3 class="text-3xl uppercase mb-4 font-mono text-blue-300 mt-5"><b>->OUR SUPPORTERS<-</b></h3>  
         <div class="header-box">
@@ -231,15 +240,15 @@
         </div>
 
         <h3 class="text-3xl uppercase mb-4 font-mono text-blue-300 mt-1"><b>->YOUR LOGO<- Here?</b></h3> 
-        <h3 class="text-md text-white mt-3">If you would like to appear as a supporter on this website, please write to: <b>contact@postuni.at</b></h3>
+        <h3 class="text-md text-white mt-3">If you would like to appear as a supporter on this website, please write to: <b>contact@postuni.at</b></h3>-->
 
         <!--<h3 class="text-3xl uppercase mb-4 font-mono text-blue-300 mt-4"><b>->SHARING IS CARING<-!</b></h3> 
         <h3 class="text-md text-white mt-3">Would you like to <b>bring attention to this initative</b> on your channels?</h3>
 
         <h3 class="text-md text-white mt-4"><a href="">Copy the still image</a> or this code for the animated version:</h3>-->
 
-        </div>
-      </div>
+        <!--</div>
+      </div>-->
 
       <!-- Footer (1) End-Notes Section -->
       <div class="bg-black text-gray-100 text-center pb-2">
@@ -327,6 +336,7 @@
       return {
         isDarkMode: false, // Default is light mode
         isAnimationsEnabled: true,   // State to toggle animations
+        isPoliticsEnabled: true, // State to toggle political content
       };
     },
     mounted () {
