@@ -87,7 +87,9 @@
                 <span class="toggle-slider"></span>
               </label>
               <span>Show <b>(Political) Information About Mayoral Candidates</b></span>
+              
             </div>
+            <span>Or: Jump straight <a href="#the-politics">to the poltics</a> <b class="text-red-300">->Make your vote count!<-</b></span>
           </div> 
         </div> 
 

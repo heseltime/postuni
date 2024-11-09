@@ -156,34 +156,48 @@
       </div>
     </div>
 
-    <div class="flex mb-8"> 
-
+    <div class="flex mb-8">
       <div
-        class="graphic flex-1 sticky top-0 bg-gray-300 border border-black mt-20 flex items-center justify-center text-8xl"
+        class="graphic flex-1 sticky top-0 mt-20 flex flex-col items-center justify-center"
       >
-        {{ activeStepIdSticky2 }}
+        <img
+          v-if="activeStepIdSticky2Image"
+          :src="activeStepIdSticky2Image"
+          :alt="activeStepIdSticky2"
+          class="full-height-image"
+        />
+        <p v-if="activeStepIdSticky2Credit" class="text-xs text-gray-500 mt-2">{{ activeStepIdSticky2Credit }}</p>
       </div>
       <Scrollama
         :offset="0.6"
         class="flex-1"
         @step-enter="stepEnterHandlerSticky2"
+        @step-exit="stepExitHandlerSticky2"
       >
         <div
           v-for="step in stepsSticky2"
           :key="step.id"
           :data-step-id="step.id"
-          class="my-64 h-48 w-48 mx-auto bg-yellow-300 border border-black flex justify-center items-center"
-          @step-enter="stepEnterHandlerSticky2"
+          :class="[
+            'my-64 h-auto w-64 mx-auto flex flex-col justify-center items-center p-4 transition-transform duration-300 transition-background',
+            activeStepIdSticky2 === step.id ? 'active-step' : 'bg-yellow-300'
+          ]"
         >
-          Event {{ step.id }}
+          <img :src="step.image2" :alt="`Event ${step.id} - Alt`" class="scroll-image w-full h-auto object-cover mb-2 transition-transform duration-300" />
+          <p class="text-sm text-gray-700 mt-2">{{ step.text }}</p>
+          <p v-if="step.credit2" class="text-xs text-gray-500 mt-1">{{ step.credit2 }}</p>
         </div>
       </Scrollama>
     </div>
 
+    <h3 class="text-4xl uppercase mb-4 font-mono text-red-300 mt-2">This Leaves the <b>->MAYOR OF LINZ<-</b> as a <b>central figure in this story</b></h3>
+
+    <p>IT:U was <b>supposed to be built near Johannes Kepler University</b>. However, <b>acting mayor</b> <a class="text-red-300 text-underline" href="https://www.derstandard.at/story/3000000239720/linzer-digital-uni-itu-wird-nicht-am-areal-in-auhof-nahe-der-jku-gebaut">Dietmar Prammer <b>halted the rezoning to building land</b> due to a negative ecologocial assessment</a> (Link in DE). So <b>how will the next Mayor of Linz shape the project?</b></p>
+
     <!-- Political Part (Conditional Display) -->
     <div v-if="isPoliticsEnabled" class="bg-red text-gray-100 text-center pb-2">
       <div class="max-w-3xl w-full mx-auto px-8 pt-10">
-        <h3 class="text-3xl uppercase mb-4 font-mono text-blue-300 mt-5"><b>->LET'S TAKE A LOOK AT MAYORAL CANDIDATES<-</b></h3>  
+        <h3 id="the-politics" class="text-3xl uppercase mb-4 font-mono text-blue-300 mt-5"><b>->LET'S TAKE A LOOK AT MAYORAL CANDIDATES<-</b></h3>  
         <div class="header-box">
           <div class="info header">
             <h3>MAYORAL CANDIDATES 2024/25</h3>
@@ -325,10 +339,36 @@ export default {
         { id: '7', text: 'Mayoral Candidates in 2024/25', image: require('../assets/img/mhwbg.png') }, 
         { id: '1', text: 'Owner: NOW Open to Negotiation', image: require('../assets/img/post-delivers.png') }
       ],
-      stepsSticky2: [{ id: 'I' }, { id: 'II' }, { id: 'III' }, { id: 'IV' }],
+      stepsSticky2: [
+        { id: '75', 
+          text: 'students founded the university here', 
+          image: require('../assets/img/spectacular.png'), 
+          image2: require('../assets/img/spectacular.png'),
+          credit: 'Photo by Photographer 1',
+          credit2: 'Photo by Photographer 1 Alt' }, 
+        { id: '4000+', 
+          text: 'signatures against closing the Green Belt', 
+          image: require('../assets/img/no-field.png'), 
+          image2: require('../assets/img/no-field.png'),
+          credit: 'Photo by Photographer 2',
+          credit2: 'Photo by Photographer 2 Alt' }, 
+        { id: '7', 
+          text: 'Mayoral Candidates in 2024/25', 
+          image: require('../assets/img/mhwbg.png'), 
+          image2: require('../assets/img/mhwbg.png'),
+          credit: 'Photo by Photographer 3',
+          credit2: 'Photo by Photographer 3 Alt' }, 
+        { id: '1', 
+          text: 'Owner: NOW Open to Negotiation', 
+          image: require('../assets/img/post-delivers.png'), 
+          image2: require('../assets/img/post-delivers.png'),
+          credit: 'Photo by Photographer 4',
+          credit2: 'Photo by Photographer 4 Alt' }
+      ],
       activeStepId: null,
       activeStepIdSticky: 'A',
-      activeStepIdSticky2: 'I'
+      activeStepIdSticky2: '75',
+      activeStepIdSticky2Image: require('../assets/img/spectacular.png')
     }
   },
   props: {
@@ -357,12 +397,17 @@ export default {
       }
     },
     stepEnterHandlerSticky ({ element, direction, index }) {
-      console.log('step-enter', { element, direction, index })
+      //console.log('step-enter', { element, direction, index })
       this.activeStepIdSticky = element.dataset.stepId
     },
     stepEnterHandlerSticky2 ({ element, direction, index }) {
-      console.log('step-enter', { element, direction, index })
-      this.activeStepIdSticky2 = element.dataset.stepId
+      //console.log('step-enter', { element, direction, index })
+      this.activeStepIdSticky2 = element.dataset.stepId;
+      const currentStep = this.stepsSticky2.find(step => step.id === this.activeStepIdSticky2);
+      if (currentStep) {
+        this.activeStepIdSticky2Image = currentStep.image;
+        this.activeStepIdSticky2Credit = currentStep.credit;
+      }
     },
     stepExitHandler({ element }) {
       const stepId = element.dataset.stepId;
@@ -374,6 +419,12 @@ export default {
         }
       }
       this.activeStepId = null;
+    },
+    stepExitHandlerSticky2({ element }) {
+      // Reset active step when it exits
+      if (this.activeStepIdSticky2 === element.dataset.stepId) {
+        this.activeStepIdSticky2 = null;
+      }
     }
   }
 }
@@ -1026,6 +1077,41 @@ export default {
       0 0 20px #00ffcc, 
       0 0 40px #00ffcc;
   }
+}
+
+.full-height-image {
+  height: 100%; /* Make the image fill the container height */
+  width: auto;  /* Maintain aspect ratio */
+  object-fit: cover; /* Ensures the image covers the container */
+}
+
+.scroll-image {
+  transform: scale(1); /* Default size */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.active-step .scroll-image {
+  transform: scale(1.1); /* Increase size when active */
+}
+
+.active-step {
+  background-color: transparent; /* Remove background */
+}
+
+.transition-background {
+  transition: background-color 0.3s ease-in-out; /* Smooth transition for background color */
+}
+
+.active-step {
+  background-color: transparent; /* No background when active */
+}
+
+.transition-text {
+  transition: font-weight 0.3s ease-in-out; /* Smooth transition for font weight */
+}
+
+.active-step-text {
+  font-weight: bold; /* Bold text when active */
 }
 
 
