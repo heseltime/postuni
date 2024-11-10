@@ -183,9 +183,13 @@
             activeStepIdSticky2 === step.id ? 'active-step' : 'bg-yellow-300'
           ]"
         >
+          <p v-if="step.timeline" class="timeline-text mb-4">{{ step.timeline }}</p>
           <img :src="step.image2" :alt="`Event ${step.id} - Alt`" class="scroll-image w-full h-auto object-cover mb-2 transition-transform duration-300" />
           <p class="text-sm text-gray-700 mt-2">{{ step.text }}</p>
+          <a v-if="step.link" :href="step.link" target="_blank" class="text-blue-600 underline text-sm mt-1">Read more</a>
           <p v-if="step.credit2" class="text-xs text-gray-500 mt-1">{{ step.credit2 }}</p>
+          <p v-if="step.comment" class="comment-text mt-2">{{ step.comment }}</p>
+          <a v-if="step.link2" :href="step.link2" target="_blank" class="text-blue-600 underline text-xs mt-1">Related link</a>
         </div>
       </Scrollama>
     </div>
@@ -340,30 +344,43 @@ export default {
         { id: '1', text: 'Owner: NOW Open to Negotiation', image: require('../assets/img/post-delivers.png') }
       ],
       stepsSticky2: [
-        { id: '75', 
-          text: 'students founded the university here', 
-          image: require('../assets/img/spectacular.png'), 
-          image2: require('../assets/img/spectacular.png'),
-          credit: 'Photo by Photographer 1',
-          credit2: 'Photo by Photographer 1 Alt' }, 
-        { id: '4000+', 
-          text: 'signatures against closing the Green Belt', 
-          image: require('../assets/img/no-field.png'), 
-          image2: require('../assets/img/no-field.png'),
-          credit: 'Photo by Photographer 2',
-          credit2: 'Photo by Photographer 2 Alt' }, 
-        { id: '7', 
-          text: 'Mayoral Candidates in 2024/25', 
-          image: require('../assets/img/mhwbg.png'), 
-          image2: require('../assets/img/mhwbg.png'),
-          credit: 'Photo by Photographer 3',
-          credit2: 'Photo by Photographer 3 Alt' }, 
         { id: '1', 
-          text: 'Owner: NOW Open to Negotiation', 
-          image: require('../assets/img/post-delivers.png'), 
-          image2: require('../assets/img/post-delivers.png'),
-          credit: 'Photo by Photographer 4',
-          credit2: 'Photo by Photographer 4 Alt' }
+          timeline: 'October 2024',
+          text: 'The new Digital University will not be built near Johannes Kepler University after all.',
+          comment: 'This kicks of the current story and this initiative.', 
+          link: 'https://www.meinbezirk.at/linz/c-politik/neue-digital-uni-wird-doch-nicht-bei-johannes-kepler-universitaet-gebaut_a6937880?ref=curate#gallery=null', 
+          image: require('../assets/img/sticky2-1a.png'), 
+          image2: require('../assets/img/sticky2-1b.jpg'),
+          credit: 'Rendering: Kronaus Mitterer Architekten ZT GmbH',
+          credit2: 'Photo: IT:U and Fotokerschi/Kerschbaum' }, 
+        { id: '2', 
+          timeline: 'Throughout 2024',
+          text: 'The "Post City Gardens" project in Linz, planned on the PostCity site, has faced significant delays due to challenges in securing investors.',
+          comment: 'With this location available, will an open-minded, inspired Post AG remain open and push for intelligent transformation as part of its OEBAG (who majority-owns the Post) mandate?',
+          link: 'https://www.nachrichten.at/oberoesterreich/linzer-post-city-gardens-investorensuche-ist-gescheitert;art4,3911556#:~:text=Seitens%20der%20Post%20wird%20nun%20mit%20einem%20Baubeginn%20frühestens%202026%20gerechnet.',
+          link2: 'https://oebag.gv.at',
+          image: require('../assets/img/sticky2-2a.png'), 
+          image2: require('../assets/img/sticky2-2b.jpeg'),
+          credit: 'Rendering: Nussmüller Architekten ZT GmbH / Expressiv GmbH',
+          credit2: 'Logo: Post AG' }, 
+        { id: '3', 
+          timeline: 'October 2024',
+          text: 'Governor Thomas Stelzer has stated that the search for a location for the "Digital University" will be handled at the highest level.', 
+          comment: 'And so, as the governor considers all of Upper Austria in his own search, will he also consider Hallstatt, we wonder? (Really now, why exactly does the highest level take so long to consider PostCity?)',
+          link: 'https://www.meinbezirk.at/linz/c-politik/lh-stelzer-erklaert-standortsuche-fuer-digital-uni-zur-chefsache_a6940181',
+          image: require('../assets/img/sticky2-3a.png'), 
+          image2: require('../assets/img/sticky2-3b.png'),
+          credit: 'Photo: State of Upper Austria/Peter May',
+          credit2: 'Photo: austriavienna.info' }, 
+        { id: '4', 
+          timeline: 'October 2024',
+          text: 'Despite other applicants: Linz is the IT:U location.',
+          comment: 'The national government (Federal Ministry of Education, Science and Research) sees the university in Linz, however, where it belongs - we agree.',
+          link: 'https://www.nachrichten.at/politik/innenpolitik/trotz-anderer-bewerber-linz-ist-der-itu-standort;art385,3992118', 
+          image: require('../assets/img/sticky2-4a.png'), 
+          image2: require('../assets/img/sticky2-4b.png'),
+          credit: 'Photo: Antonio Bayer',
+          credit2: 'Photo: 1000things.at' }
       ],
       activeStepId: null,
       activeStepIdSticky: 'A',
@@ -1112,6 +1129,19 @@ export default {
 
 .active-step-text {
   font-weight: bold; /* Bold text when active */
+}
+
+.timeline-text {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem; /* Adjust size as needed */
+  margin-bottom: 0.5rem;
+}
+
+.comment-text {
+  color: #6b7280; /* Gray-500 color */
+  font-style: italic;
+  font-size: 0.875rem; /* Adjust size as needed */
 }
 
 
