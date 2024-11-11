@@ -709,7 +709,7 @@ export default {
 
 .highlighted-text-box-red {
   background-color: #4a1a1a; /* Dark red background */
-  border: 2px solid #b30000; /* Darker red border */
+  /*border: 2px solid #b30000;*/ /* Darker red border */
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Slightly darker shadow for emphasis */
