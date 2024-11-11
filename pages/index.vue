@@ -574,7 +574,8 @@ export default {
 
 .highlighted-text-box {
   background-color: #f3f4f6; /* Light gray background */
-  border: 2px solid #ed820e; /* Orange border for emphasis */
+  /*border: 2px solid #ed820e;  Orange border for emphasis */
+  border: 2px solid #555; 
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -585,7 +586,8 @@ export default {
   font-size: 2em;
   margin-bottom: 10px;
   font-weight: bold;
-  color: #ed820e;
+  /*color: #ed820e;*/
+  color: #888;
   text-align: left;
 }
 
@@ -618,7 +620,8 @@ export default {
 }
 
 .highlighted-text-box-yellow {
-  background-color: #fff9db; /* Light yellow background */
+  /*background-color: #fff9db;*/ /* Light yellow background */
+  background-color: #bbb;
   border: 2px solid #ffcc00; /* Yellow border for emphasis */
   border-radius: 8px;
   padding: 20px;
@@ -630,7 +633,8 @@ export default {
   font-size: 2em;
   margin-bottom: 10px;
   font-weight: bold;
-  color: #ffcc00;
+  /*color: #ffcc00;*/
+  color: #666;
   text-align: left;
 }
 
@@ -663,8 +667,10 @@ export default {
 }
 
 .highlighted-text-box-blue {
-  background-color: #e0f2ff; /* Light blue background */
-  border: 2px solid #00aaff; /* Blue border for emphasis */
+  /*background-color: #e0f2ff;*/ /* Light blue background */
+  background-color: #ddd;
+  /*border: 2px solid #00aaff;*/ /* Blue border for emphasis */
+  border: 2px solid #000;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -675,7 +681,8 @@ export default {
   font-size: 2em;
   margin-bottom: 10px;
   font-weight: bold;
-  color: #0077cc; /* Darker blue for the header */
+  /*color: #0077cc;*/ /* Darker blue for the header */
+  color: #777;
   text-align: left;
 }
 
@@ -1111,16 +1118,48 @@ export default {
   transform: scale(1.1); /* Increase size when active */
 }
 
-.active-step {
-  background-color: transparent; /* Remove background */
-}
-
 .transition-background {
-  transition: background-color 0.3s ease-in-out; /* Smooth transition for background color */
+  /* Darker gray background with light gray border */
+  background-color: #555; 
+  border: 2px solid #e5e7eb; 
+  border-radius: 8px; 
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); 
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.transition-background:hover {
+  background-color: #fde047; /* Yellow background on hover */
+  border-color: #facc15; /* Slightly darker yellow border on hover */
+}
+
+.transition-background h3, 
+.transition-background h4, 
+.transition-background p {
+  color: #b7b799; /* Light gray text color */
+}
+
+.transition-background:hover h3,
+.transition-background:hover h4,
+.transition-background:hover p {
+  color: #333; /* Dark text color for better contrast on yellow background */
+}
+
+.transition-background a {
+  color: #9ca3af; 
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid #9ca3af;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.transition-background:hover a {
+  color: #333; /* Darker text for better contrast on yellow */
+  border-color: #333;
 }
 
 .active-step {
-  background-color: transparent; /* No background when active */
+  background-color: #888; /* No background when active */
 }
 
 .transition-text {
