@@ -189,7 +189,7 @@
         <div class="highlighted-text-box mb-4">
           <h3>Starting a University: 2023 Ars Electronica Festival Recap and the 2024/25 Perspective</h3>
           <h4><a href="https://postuni.at/en/">Book Link Perhaps</a></h4>
-          <h5>by Open! Quebi?</h5>
+          <h5>by Open! Letta?</h5>
           <p>TODO! JACK KONTAKT FOUNDING LAB ODER EIGENER TEXT</p>
           <p>Group Photo?</p>
         </div>
