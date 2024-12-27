@@ -81,6 +81,7 @@
               <span>Show <b>(Political) Information About Mayoral Candidates</b></span>
               <p>Recommended.</p>
             </div>
+            <p>Jump directly to <a href="#the-politics">election info section</a>.</p>
           </div> 
         </div> 
 
