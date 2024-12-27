@@ -403,34 +403,36 @@ export default {
       candidates: [
         {
           id: 1,
-          name: "Candidate 1",
-          partyColor: "#ff0000", // Red color for the party
-          partyName: "Reds",
-          description: "A brief description about the candidate’s stance or bio.",
-          fullStatement: "Full statement of Candidate 1 about the election and PostCity project.",
-          image: require('../assets/img/sticky2-4a.png'),
+          name: "Martin Hajart",
+          partyColor: "#796190",
+          partyName: "ÖVP",
+          description: "supports establishing IT:U in Linz, considers PostCity one of further options (however)",
+          fullStatement: "Mr Hajart wrote (December 26th, 2024): Fundamentally, I would have supported the establishment of IT:U next to JKU but want to emphasize that, during discussions, I consistently opposed the construction of corporate headquarters in recreational areas. Additionally, any project should be environmentally sustainable. My focus (and it remains so) has been to establish small, business-oriented research units alongside IT:U to create a biotope that bridges basic research to applied research. \
+          The planning for IT:U has been underway for years. That the project has now been scrapped after this long preparation period without any concrete alternative locations sets IT:U back by years. I deeply regret this.\
+          Nevertheless, given the significance of this century-defining project, it is crucial to look forward. PostCity is a good alternative as a location. I have also proposed the current site of Raiffeisenlandesbank OÖ (which will soon relocate to a nearby plot) as a potential location that, in my view, would be suitable. However, there are other possible sites worth considering. It is essential that the location remains in Linz and that ultimately the best possible site is chosen.",
+          image: require('../assets/img/hajart.png'),
           support: true,
         },
         {
           id: 2,
-          name: "Candidate 2",
-          partyColor: "#0000ff", // Blue color for the party
-          partyName: "Blues",
-          description: "A brief description about the candidate’s stance or bio.",
-          fullStatement: "Full statement of Candidate 2 about the election and PostCity project.",
-          image: require('../assets/img/sticky2-4a.png'),
-          support: false,
+          name: "Michael Raml",
+          partyColor: "#31579F", 
+          partyName: "FPÖ",
+          description: "sees PostCity as the ideal location for IT:U due to its excellent transport links, avoidance of environmental impact, and potential to transform the area around the main train station",
+          fullStatement: "Mr Raml wrote (December 19th, 2024): I consider PostCity the ideal location for IT:U, and for several reasons. The transport connections for an internationally active university (which is the goal) are excellent, as it is located right next to the train station. The connection to the A7 motorway would also make the university accessible for drivers, and there would be sufficient space for a large parking garage on-site (which, incidentally, should also be used as a general Park & Ride facility). Unlike the original plan in Auhof, no green spaces need to be paved over for PostCity. It also offers a great opportunity to enhance the area around the main train station into a vibrant student district for all of Linz – extending up to Volksgarten and the southern Landstraße.",
+          image: require('../assets/img/raml.png'),
+          support: true,
         },
         {
           id: 3,
-          name: "Candidate 3",
-          partyColor: "#000000", // Black color for the party
-          partyName: "Blacks",
-          description: "A brief description about the candidate’s stance or bio.",
-          fullStatement: "Full statement of Candidate 2 about the election and PostCity project.",
-          image: require('../assets/img/sticky2-4a.png'),
-          support: false,
-        },
+          name: "Eva Schobesberger",
+          partyColor: "#91B338", 
+          partyName: "Greens",
+          description: "strong supporter of the Grüngürtel aktion, considers PostCity the main alternative due to public transport links",
+          fullStatement: "Ms Schobesberger said on the phone (December 20th, 2024): She was one of the first and loudest supporters of the Grüngürtel Aktion to stop building the first IT:U location proposal. She further supported permanently banning this option in the city government. Now she sees PostCity as the main alternate site, considering IT:U to belong to Linz as well, and at PostCity especially also because of ease of access from public transport (train station).",
+          image: require('../assets/img/schobesberger.png'),
+          support: true,
+        }
       ],
     }
   },
