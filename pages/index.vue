@@ -264,6 +264,16 @@
       </div>
     </div>
 
+    <h4 class="mb-4">Note: The two representatives of the larger parties, SPÖ and ÖVP in Linz, are notable because they voted <b>for</b> the original Grüngürtel plan (in line with their parties) under then SPÖ Mayor Luger before backtracking under Depty Mayor Prammer.</h4>
+
+    <img alt="Gemeinderat Distribution Vote for Grüngürtel: SPÖ and ÖVP vote for the decision" src="~/assets/img/gemeinderat.jpg.webp" />
+
+    <h4 class="mb-10">Courtesy of <a href="https://www.linzplus.at/post/stadtpolitik-verkauft-gruenguertel">Linz+</a></h4>
+
+    <h3 class="text-3xl uppercase mb-10 font-mono text-blue-300 mt-5">
+      <b>With this ->NEW INTEREST IN THE IT:U LOCATION QUESTION<- we are hopeful a sensible decision will be made and voted for under the new mayor</b>
+    </h3>  
+
     <div class="header-box-yellow">
       <div class="intro header">
         <h3>THE VISION</h3>
@@ -406,7 +416,7 @@ export default {
           name: "Martin Hajart",
           partyColor: "#796190",
           partyName: "ÖVP",
-          description: "supports establishing IT:U in Linz, considers PostCity one of further options (however)",
+          description: "supports establishing IT:U in Linz, considers PostCity one of further options (however) - *see note below, voted for the original Grüngürtel plan.",
           fullStatement: "Mr Hajart wrote (December 26th, 2024): Fundamentally, I would have supported the establishment of IT:U next to JKU but want to emphasize that, during discussions, I consistently opposed the construction of corporate headquarters in recreational areas. Additionally, any project should be environmentally sustainable. My focus (and it remains so) has been to establish small, business-oriented research units alongside IT:U to create a biotope that bridges basic research to applied research. \
           The planning for IT:U has been underway for years. That the project has now been scrapped after this long preparation period without any concrete alternative locations sets IT:U back by years. I deeply regret this.\
           Nevertheless, given the significance of this century-defining project, it is crucial to look forward. PostCity is a good alternative as a location. I have also proposed the current site of Raiffeisenlandesbank OÖ (which will soon relocate to a nearby plot) as a potential location that, in my view, would be suitable. However, there are other possible sites worth considering. It is essential that the location remains in Linz and that ultimately the best possible site is chosen.",
@@ -431,6 +441,16 @@ export default {
           description: "strong supporter of the Grüngürtel aktion, considers PostCity the main alternative due to public transport links",
           fullStatement: "Ms Schobesberger said on the phone (December 20th, 2024): She was one of the first and loudest supporters of the Grüngürtel Aktion to stop building the first IT:U location proposal. She further supported permanently banning this option in the city government. Now she sees PostCity as the main alternate site, considering IT:U to belong to Linz as well, and at PostCity especially also because of ease of access from public transport (train station).",
           image: require('../assets/img/schobesberger.png'),
+          support: true,
+        },
+        {
+          id: 4,
+          name: "Dietmar Prammer",
+          partyColor: "#A6131F", 
+          partyName: "SPÖ",
+          description: "supports IT:U location in PostCity as well as others in the city, according to media outlets (no direct statement as of yet) - *see note below, voted for the original Grüngürtel plan.",
+          fullStatement: "Not (yet) available",
+          image: require('../assets/img/prammer.jpg'),
           support: true,
         }
       ],
