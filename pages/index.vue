@@ -38,7 +38,7 @@
           </p>
 
           <h3 class="text-4xl uppercase mb-4 font-mono text-white-400 pt-12">The University Is Called IT:U</h3>
-          <h2 class="glossy-bold-black-h2">IT:U x PostCity Is <span class="neon-flicker">PostUni</span></h2>
+          <h2 class="glossy-bold-black-h2">IT:U x PostCity Is <span class="neon-flicker">PostIT:U</span></h2>
 
       </div>
 
@@ -331,12 +331,12 @@
 export default {
   data () {
     return {
-      steps: [{ id: '1', image: require('../assets/img/postUNI@daniel_schöngruber_1.jpg') },
-      { id: '2', image: require('../assets/img/plan_1.png') },
-      { id: '3', image: require('../assets/img/Firefly-2.jpg') },
-      { id: '4', image: require('../assets/img/plan_2.png') }
+      steps: [
+        { id: '1', image: require('../assets/img/postUNI@daniel_schöngruber_1.jpg') },
+        { id: '2', image: require('../assets/img/plan1b3x.png') },
       ],
       imageReplacement: require('../assets/img/postUNI@daniel_schöngruber_2.png'),
+      imageReplacement2: require('../assets/img/plan1a3x.png'),
       stepsSticky: [
         { id: '75', text: 'students founded the university here', image: require('../assets/img/spectacular.png') }, 
         { id: '4000+', text: 'signatures against closing the Green Belt', image: require('../assets/img/no-field.png') }, 
@@ -360,13 +360,13 @@ export default {
           link: 'https://www.nachrichten.at/oberoesterreich/linzer-post-city-gardens-investorensuche-ist-gescheitert;art4,3911556#:~:text=Seitens%20der%20Post%20wird%20nun%20mit%20einem%20Baubeginn%20frühestens%202026%20gerechnet.',
           link2: 'https://oebag.gv.at',
           image: require('../assets/img/sticky2-2a.png'), 
-          image2: require('../assets/img/sticky2-2b.jpeg'),
+          image2: require('../assets/img/sticky2-2b.png'),
           credit: 'Rendering: Nussmüller Architekten ZT GmbH / Expressiv GmbH',
           credit2: 'Logo: Post AG' }, 
         { id: '3', 
           timeline: 'October 2024',
           text: 'Governor Thomas Stelzer has stated that the search for a location for the "Digital University" will be handled at the highest level.', 
-          comment: 'And so, as the governor considers all of Upper Austria in his own search, will he also consider Hallstatt, we wonder? (Really now, why exactly does the highest level take so long to consider PostCity?)',
+          comment: 'And so, as the governor considers all of Upper Austria in his own search, will Hallstatt also be shortlisted, we wonder?',
           link: 'https://www.meinbezirk.at/linz/c-politik/lh-stelzer-erklaert-standortsuche-fuer-digital-uni-zur-chefsache_a6940181',
           image: require('../assets/img/sticky2-3a.png'), 
           image2: require('../assets/img/sticky2-3b.png'),
@@ -411,6 +411,11 @@ export default {
         if (stepIndex !== -1) {
           this.steps[stepIndex].image = this.imageReplacement;
         }
+      } else if (stepId === '2') {
+        const stepIndex = this.steps.findIndex(step => step.id === '2');
+        if (stepIndex !== -1) {
+          this.steps[stepIndex].image = this.imageReplacement2;
+        }
       }
     },
     stepEnterHandlerSticky ({ element, direction, index }) {
@@ -429,10 +434,14 @@ export default {
     stepExitHandler({ element }) {
       const stepId = element.dataset.stepId;
       if (stepId === '1') {
-        // Optionally reset the image when the step exits
         const stepIndex = this.steps.findIndex(step => step.id === '1');
         if (stepIndex !== -1) {
           this.steps[stepIndex].image = require('../assets/img/postUNI@daniel_schöngruber_1.jpg');
+        }
+      } else if (stepId === '2') {
+        const stepIndex = this.steps.findIndex(step => step.id === '2'); // Find index for stepId '2'
+        if (stepIndex !== -1) {
+          this.steps[stepIndex].image = require('../assets/img/plan1b3x.png');
         }
       }
       this.activeStepId = null;
