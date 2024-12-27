@@ -234,8 +234,14 @@
             <tbody>
               <tr v-for="candidate in candidates" :key="candidate.id" :data-support="candidate.support ? 'yes' : ''">
                 <td><img :src="candidate.image" :alt="candidate.name" class="candidate-img" /></td>
-                <td>
-                  <span @click="showPopup(candidate)" class="cursor-pointer text-blue-500 hover:underline">
+                <td 
+                  :style="{ 
+                    color: candidate.partyColor, 
+                    backgroundColor: '#ffffff', /* White background */ 
+                    fontWeight: 'bold' /* Bold font */
+                  }"
+                >
+                  <span @click="showPopup(candidate)" class="cursor-pointer hover:underline">
                     {{ candidate.name }}
                   </span>
                 </td>
@@ -244,6 +250,7 @@
               </tr>
             </tbody>
           </table>
+
         </div>
 
         <popup v-if="selectedCandidate" @close="selectedCandidate = null">
@@ -397,6 +404,8 @@ export default {
         {
           id: 1,
           name: "Candidate 1",
+          partyColor: "#ff0000", // Red color for the party
+          partyName: "Reds",
           description: "A brief description about the candidate’s stance or bio.",
           fullStatement: "Full statement of Candidate 1 about the election and PostCity project.",
           image: require('../assets/img/sticky2-4a.png'),
@@ -405,6 +414,8 @@ export default {
         {
           id: 2,
           name: "Candidate 2",
+          partyColor: "#0000ff", // Blue color for the party
+          partyName: "Blues",
           description: "A brief description about the candidate’s stance or bio.",
           fullStatement: "Full statement of Candidate 2 about the election and PostCity project.",
           image: require('../assets/img/sticky2-4a.png'),
@@ -413,6 +424,8 @@ export default {
         {
           id: 3,
           name: "Candidate 3",
+          partyColor: "#000000", // Black color for the party
+          partyName: "Blacks",
           description: "A brief description about the candidate’s stance or bio.",
           fullStatement: "Full statement of Candidate 2 about the election and PostCity project.",
           image: require('../assets/img/sticky2-4a.png'),
