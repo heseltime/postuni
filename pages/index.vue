@@ -201,7 +201,10 @@
     <!-- Political Part (Conditional Display) -->
     <div v-if="isPoliticsEnabled" class="bg-red text-gray-100 text-center pb-2">
       <div class="max-w-3xl w-full mx-auto px-8 pt-10">
-        <h3 id="the-politics" class="text-3xl uppercase mb-4 font-mono text-blue-300 mt-5"><b>->LET'S TAKE A LOOK AT MAYORAL CANDIDATES<-</b></h3>  
+        <h3 id="the-politics" class="text-3xl uppercase mb-4 font-mono text-blue-300 mt-5">
+          <b>->LET'S TAKE A LOOK AT MAYORAL CANDIDATES<-</b>
+        </h3>  
+
         <div class="header-box">
           <div class="info header">
             <h3>MAYORAL CANDIDATES 2024/25</h3>
@@ -220,34 +223,37 @@
           <h2>Let's Vote for Linz</h2>
 
           <table class="candidates-table">
-          <thead>
-            <tr>
-              <th>Image</th>
-              <th>Candidate</th>
-              <th>Position</th>
-              <th>Supports IT:U @ PostCity (PostUni)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr data-support="yes">
-              <td><img src="path/to/candidate1.jpg" alt="Candidate 1" class="candidate-img" /></td>
-              <td>Candidate 1</td>
-              <td>A brief description about the candidate’s stance or bio.</td>
-              <td class="support-icon" data-support="yes"></td>
-            </tr>
-            <tr>
-              <td><img src="path/to/candidate2.jpg" alt="Candidate 2" class="candidate-img" /></td>
-              <td>Candidate 2</td>
-              <td>A brief description about the candidate’s stance or bio.</td>
-              <td class="support-icon"></td>
-            </tr>
-            <!-- Add more rows as needed -->
-          </tbody>
-        </table>
-
+            <thead>
+              <tr>
+                <th>Image</th>
+                <th>Candidate</th>
+                <th>Position</th>
+                <th>Supports IT:U @ PostCity (PostUni)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="candidate in candidates" :key="candidate.id" :data-support="candidate.support ? 'yes' : ''">
+                <td><img :src="candidate.image" :alt="candidate.name" class="candidate-img" /></td>
+                <td>
+                  <span @click="showPopup(candidate)" class="cursor-pointer text-blue-500 hover:underline">
+                    {{ candidate.name }}
+                  </span>
+                </td>
+                <td>{{ candidate.description }}</td>
+                <td class="support-icon" :data-support="candidate.support ? 'yes' : ''"></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
-        <h3 class="text-3xl uppercase mb-4 font-mono text-blue-300 mt-1"><b>We ->DO NOT<- Side with any Candidate Generally</b></h3> 
+        <popup v-if="selectedCandidate" @close="selectedCandidate = null">
+          <template v-slot:header>
+            <h2>{{ selectedCandidate.name }}</h2>
+          </template>
+          <template v-slot:content>
+            <p>{{ selectedCandidate.fullStatement }}</p>
+          </template>
+        </popup>
       </div>
     </div>
 
@@ -385,7 +391,34 @@ export default {
       activeStepId: null,
       activeStepIdSticky: 'A',
       activeStepIdSticky2: '75',
-      activeStepIdSticky2Image: require('../assets/img/spectacular.png')
+      activeStepIdSticky2Image: require('../assets/img/spectacular.png'),
+      selectedCandidate: null,
+      candidates: [
+        {
+          id: 1,
+          name: "Candidate 1",
+          description: "A brief description about the candidate’s stance or bio.",
+          fullStatement: "Full statement of Candidate 1 about the election and PostCity project.",
+          image: require('../assets/img/sticky2-4a.png'),
+          support: true,
+        },
+        {
+          id: 2,
+          name: "Candidate 2",
+          description: "A brief description about the candidate’s stance or bio.",
+          fullStatement: "Full statement of Candidate 2 about the election and PostCity project.",
+          image: require('../assets/img/sticky2-4a.png'),
+          support: false,
+        },
+        {
+          id: 3,
+          name: "Candidate 3",
+          description: "A brief description about the candidate’s stance or bio.",
+          fullStatement: "Full statement of Candidate 2 about the election and PostCity project.",
+          image: require('../assets/img/sticky2-4a.png'),
+          support: false,
+        },
+      ],
     }
   },
   props: {
@@ -451,6 +484,9 @@ export default {
       if (this.activeStepIdSticky2 === element.dataset.stepId) {
         this.activeStepIdSticky2 = null;
       }
+    },
+    showPopup(candidate) {
+      this.selectedCandidate = candidate;
     }
   }
 }
