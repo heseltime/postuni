@@ -11,6 +11,8 @@
 
           <h2 class="text-5xl uppercase mb-0 font-mono pt-5"><span class="text-yellow-300">PostIT</span>:U</h2>
 
+          <p><i class="text-2xl mb-4 font-mono text-gray-100 pt-2">a university-political memo for a city</i></p>
+
           <h3 class="text-3xl uppercase mb-4 font-mono text-red-300 pt-2">PostCity x IT:U - Linz, You Saved the Grüngürtel,</h3>
 
           <h3 class="text-4xl uppercase mb-4 font-mono text-red-300 pt-2">
