@@ -135,7 +135,7 @@
 
         <img src="~/assets/img/machine.jpg" alt="From the Collective:Detention Model Makers" class="w-full mb-4" />
 
-        <p class="mb-5">Art Credit: Ars Electronica/IT:U <b>Founding Lab 2024</b></p>
+        <p class="mb-5">Art Credit: Ars Electronica/IT:U <b>Founding Lab 2023</b></p>
 
         <!--<div class="header-box">
           <div class="info header">

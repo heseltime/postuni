@@ -222,6 +222,8 @@
 
           <h2>Let's Vote for Linz</h2>
 
+          <p>The following list is in alphabetic order and gives an overview of the relevant information about candidates and their stance as well as history with the location selection.</p>
+
           <table class="candidates-table">
             <thead>
               <tr>
@@ -229,6 +231,7 @@
                 <th>Candidate</th>
                 <th>Position</th>
                 <th>Supports IT:U @ PostCity (PostUni)</th>
+                <th>Connection to Original Grüngürtel Plan</th>
               </tr>
             </thead>
             <tbody>
@@ -247,6 +250,11 @@
                 </td>
                 <td>{{ candidate.description }}</td>
                 <td class="support-icon" :data-support="candidate.support ? 'yes' : ''"></td>
+                <td class="support-icon" :data-support="candidate.greenbelt ? 'yes' : ''">
+                  <template v-if="!candidate.greenbelt">
+                    <p class="text-xs text-gray-900">*see <b>Note</b> below: voted FOR the problematic original greenbelt plan</p>
+                  </template>
+                </td>
               </tr>
             </tbody>
           </table>
@@ -264,7 +272,7 @@
       </div>
     </div>
 
-    <h4 class="mb-4">Note: The two representatives of the larger parties, SPÖ and ÖVP in Linz, are notable because they voted <b>for</b> the original Grüngürtel plan (in line with their parties) under then SPÖ Mayor Luger before backtracking under Depty Mayor Prammer.</h4>
+    <h4 class="mb-4"><b>Note</b>: The two representatives of the larger parties, SPÖ and ÖVP in Linz, are notable because they voted <b>for</b> the original Grüngürtel plan (in line with their parties) under then SPÖ Mayor Luger before backtracking under Deputy Mayor Prammer, under some pressure from the county government. The original idea for this location came from a questionable process without any significant transpareny or inclusion of stakeholders beyond politics and business, not to mention the public.</h4>
 
     <img alt="Gemeinderat Distribution Vote for Grüngürtel: SPÖ and ÖVP vote for the decision" src="~/assets/img/gemeinderat.jpg.webp" />
 
@@ -422,6 +430,7 @@ export default {
           Nevertheless, given the significance of this century-defining project, it is crucial to look forward. PostCity is a good alternative as a location. I have also proposed the current site of Raiffeisenlandesbank OÖ (which will soon relocate to a nearby plot) as a potential location that, in my view, would be suitable. However, there are other possible sites worth considering. It is essential that the location remains in Linz and that ultimately the best possible site is chosen.",
           image: require('../assets/img/hajart.png'),
           support: true,
+          greenbelt: false,
         },
         {
           id: 2,
@@ -432,6 +441,7 @@ export default {
           fullStatement: "Mr Raml wrote (December 19th, 2024): I consider PostCity the ideal location for IT:U, and for several reasons. The transport connections for an internationally active university (which is the goal) are excellent, as it is located right next to the train station. The connection to the A7 motorway would also make the university accessible for drivers, and there would be sufficient space for a large parking garage on-site (which, incidentally, should also be used as a general Park & Ride facility). Unlike the original plan in Auhof, no green spaces need to be paved over for PostCity. It also offers a great opportunity to enhance the area around the main train station into a vibrant student district for all of Linz – extending up to Volksgarten and the southern Landstraße.",
           image: require('../assets/img/raml.png'),
           support: true,
+          greenbelt: true,
         },
         {
           id: 3,
@@ -442,9 +452,21 @@ export default {
           fullStatement: "Ms Schobesberger said on the phone (December 20th, 2024): She was one of the first and loudest supporters of the Grüngürtel Aktion to stop building the first IT:U location proposal. She further supported permanently banning this option in the city government. Now she sees PostCity as the main alternate site, considering IT:U to belong to Linz as well, and at PostCity especially also because of ease of access from public transport (train station).",
           image: require('../assets/img/schobesberger.png'),
           support: true,
+          greenbelt: true,
         },
         {
           id: 4,
+          name: "Lorenz Potocnik",
+          partyColor: "#F9EC37", 
+          partyName: "LINZ+",
+          description: "supports IT:U location in PostCity or another city location, after a proper location selection process, which has been absent so far",
+          fullStatement: "This candidate made himself available by phone, referencing extensive background writings on the topic, e.g. https://www.linzplus.at/post/itu-und-flaechenverbrauch and https://www.linzplus.at/post/auhof-sieg-der-zivilgesellschaft - all taking a clear stance against the original IT:U location plan and for due process.",
+          image: require('../assets/img/potocnik.png'),
+          support: true,
+          greenbelt: true,
+        },
+        {
+          id: 5,
           name: "Dietmar Prammer",
           partyColor: "#A6131F", 
           partyName: "SPÖ",
@@ -452,6 +474,7 @@ export default {
           fullStatement: "Not (yet) available",
           image: require('../assets/img/prammer.jpg'),
           support: true,
+          greenbelt: false,
         }
       ],
     }
@@ -845,6 +868,11 @@ export default {
   padding: 12px;
   text-align: center;
   border-bottom: 1px solid #b30000;
+}
+
+.candidates-table td p {
+  color: #000;
+  font-size: x-small;
 }
 
 .candidates-table th {
