@@ -81,7 +81,7 @@
               <span>Show <b>(Political) Information About Mayoral Candidates</b></span>
               <p>Recommended.</p>
             </div>
-            <p>Jump directly to <a href="#the-politics">election info section</a>.</p>
+            <p>Jump directly to <a href="#the-politics">2025 Linz Mayoral Election info section</a>.</p>
           </div> 
         </div> 
 
