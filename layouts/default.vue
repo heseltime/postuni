@@ -46,7 +46,7 @@
 
           <h3 class="text-4xl uppercase mb-4 font-mono text-white-400 pt-12">Who are we?</h3>
 
-          <h4>We are an unlikely grouping iterested in a sutainable, smart, relevant and promising development of the university sector in Linz that still goes together with economic prowess: we are the KHJ, the Catholic University Youth in Upper Austria, as well as IT:U Founding Lab and the 2024 Summer School cohort. <b>But above all, we are Linzer.</b> And we are students!</h4>
+          <h4>We are an unlikely grouping iterested in a sutainable, smart, relevant and promising development of the university sector in Linz that still goes together with economic prowess: we are Catholic University Youth Upper Austria leadership, as well as IT:U Founding Lab and IT:U 2024 Summer School participants. <b>But above all, we are Linzer.</b> And we are students!</h4>
 
           <h4>Read on for more background.
           </h4>
