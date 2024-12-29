@@ -156,6 +156,8 @@
 
         <img src="~/assets/img/Firefly-1.jpg" alt="From the Collective:Detention Model Makers" class="w-full mb-4" />
 
+        <p class="mb-10 text-white-400">Art Credit: <b>post:collective</b> (<a href="https://postuni.at">PostUni</a>)</p>
+
         <div class="header-box mt-5">
           <div class="info header">
             <h3>CATHOLIC UNIV. YOUTH</h3>
@@ -233,6 +235,8 @@
           <h2 class="text-5xl uppercase font-mono text-red-400 mt-10"><b>Next stop: Linz, PostIT:U!</b></h2>
 
           <img src="~/assets/img/linienplan.jpg" alt="From the Collective:Detention Model Makers" class="w-full mb-0 mt-10" />
+
+          <p class="mt-5 text-gray-400">Art Credit: <b>post:collective</b> (<a href="https://postuni.at">PostUni</a>)</p>
         </div>
 
         <div :style="isAnimationsEnabled ? { animation: 'roll 50s infinite linear' } : {}" class="con-belt"></div>

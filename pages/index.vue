@@ -115,6 +115,7 @@
       <p>Underused facilities and institutions in Linz like the postal distribution center PostCity, but also the slaughterhouse, or the Nestlé site are ready for new, versatile uses, which could be implemented in a climate- and environmentally-friendly manner within existing structures. Universities, along with their buildings and spaces, are essential, identity-shaping institutions within cities. Through students, educators, and infrastructure, they have the power to activate entire neighborhoods socially and economically as places to live and work. Over 26,000 people study in Linz, with around 3,000 more expected to join IT:U.
         To fulfill the societal mission of a university, its impact should not dissipate on the outskirts of the city but rather be integrated into the urban fabric, enhancing the city’s social and economic potential.</p>
       <img src="~/assets/img/city-model-no-bg.png" alt="PostCity City Model" class="" />
+      <p class="mb-5 text-gray-400">Art Credit: <b>post:collective</b> (<a href="https://postuni.at">PostUni</a>)</p>
     </div>
 
 
@@ -311,6 +312,8 @@
         >
           <img :src="step.image" :alt="step.id" class="topic-group-steps" />
         </div>
+
+        <p class="mb-10 text-gray-400">Art Credit: <b>post:collective</b> (<a href="https://postuni.at">PostUni</a>)</p>
     </Scrollama>
 
     <div class="image-container">
